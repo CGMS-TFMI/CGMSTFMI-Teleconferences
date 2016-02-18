@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:str="http://exslt.org/strings" xmlns:date="http://exslt.org/dates-and-times" xmlns:fn="http://www.w3.org/TR/xpath-functions" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:wmo="http://www.wmo-sat.info" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xdt="http://www.w3.org/2005/02/xpath-datatypes" xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmd/gmd.xsd http://www.opengis.net/gml/3.2 http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19136_Schemas/gml.xsd http://www.isotc211.org/2005/gmx http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/gmx/gmx.xsd">
+	<!-- Abstract: This sample implements the latest definitions of the CGMS to ISO19115/ISO19139 mappings as defined here: https://docs.google.com/spreadsheets/d/1xgGXvbT6wWQPvrygzUj4rQbfOmc-UFaK9aSQ7q0M0Ts/edit#gid=1268484378  -->
+	<!-- Author: Dr. Uwe Voges (con terra GmbH) -->
+	<!-- CreationDate: 23-12-2015 - created from a tabular metadata example Guillaume Aubert provided in Github -->
+	<!-- RevisionDate: 16-02-2016 - aligned with simplified CGMS model as agreed upon in last telcos -->
+	<gmd:fileIdentifier>
+		<gco:CharacterString>IN:GOV:IMD:EO:AMV</gco:CharacterString>
+	</gmd:fileIdentifier>
+	<gmd:language>
+		<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
+	</gmd:language>
+	<gmd:hierarchyLevel>
+		<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
+	</gmd:hierarchyLevel>
+	<!-- contact for the metadata -->
+	<gmd:contact>
+		<gmd:CI_ResponsibleParty>
+			<gmd:organisationName>
+				<gco:CharacterString>con terra GmbH</gco:CharacterString>
+			</gmd:organisationName>
+			<gmd:contactInfo>
+				<gmd:CI_Contact>
+					<gmd:address>
+						<gmd:CI_Address>
+							<gmd:deliveryPoint>
+								<gco:CharacterString>Martin-Luther-King-Weg 24</gco:CharacterString>
+							</gmd:deliveryPoint>
+							<gmd:city>
+								<gco:CharacterString>Muenster</gco:CharacterString>
+							</gmd:city>
+							<gmd:administrativeArea>
+								<gco:CharacterString>NRW</gco:CharacterString>
+							</gmd:administrativeArea>
+							<gmd:postalCode>
+								<gco:CharacterString>48155</gco:CharacterString>
+							</gmd:postalCode>
+							<gmd:country>
+								<gco:CharacterString>Germany</gco:CharacterString>
+							</gmd:country>
+							<gmd:electronicMailAddress>
+								<gco:CharacterString>conterra@conterra.de</gco:CharacterString>
+							</gmd:electronicMailAddress>
+						</gmd:CI_Address>
+					</gmd:address>
+					<gmd:onlineResource>
+						<gmd:CI_OnlineResource>
+							<gmd:linkage>
+								<gmd:URL>http://www.conterra.de</gmd:URL>
+							</gmd:linkage>
+						</gmd:CI_OnlineResource>
+					</gmd:onlineResource>
+				</gmd:CI_Contact>
+			</gmd:contactInfo>
+			<gmd:role>
+				<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+			</gmd:role>
+		</gmd:CI_ResponsibleParty>
+	</gmd:contact>
+	<gmd:dateStamp>
+		<gco:Date>2016-02-16</gco:Date>
+	</gmd:dateStamp>
+	<gmd:metadataStandardName>
+		<gco:CharacterString>WMO Core Metadata Profile of ISO19115 (WMO Core), 2003/Cor.1:2006 (ISO 19115), 2007 (ISO/TS 19139)</gco:CharacterString>
+	</gmd:metadataStandardName>
+	<gmd:metadataStandardVersion>
+		<gco:CharacterString>1.3</gco:CharacterString>
+	</gmd:metadataStandardVersion>
+	<gmd:identificationInfo>
+		<gmd:MD_DataIdentification>
+			<gmd:citation>
+				<gmd:CI_Citation>
+					<gmd:title>
+						<gco:CharacterString/>
+					</gmd:title>
+					<gmd:alternateTitle>
+						<gco:CharacterString>Atmopheric Motion Vector(AMV)</gco:CharacterString>
+					</gmd:alternateTitle>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2014-01-15</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2014-01-15</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:date>
+						<gmd:CI_Date>
+							<gmd:date>
+								<gco:Date>2014-01-15</gco:Date>
+							</gmd:date>
+							<gmd:dateType>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="modification"/>
+							</gmd:dateType>
+						</gmd:CI_Date>
+					</gmd:date>
+					<gmd:edition>
+						<gco:CharacterString>Not Applicable</gco:CharacterString>
+					</gmd:edition>
+					<gmd:identifier>
+						<gmd:MD_Identifier>
+							<gmd:code>
+								<gco:CharacterString>IN:GOV:IMD:EO:AMV</gco:CharacterString>
+							</gmd:code>
+						</gmd:MD_Identifier>
+					</gmd:identifier>
+					<gmd:citedResponsibleParty>
+						<gmd:CI_ResponsibleParty>
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:onlineResource>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL>http://www.....</gmd:URL>
+											</gmd:linkage>
+											<gmd:name>
+												<gco:CharacterString>URL Links to the Calibration information (calibration tables and product information). </gco:CharacterString>
+											</gmd:name>
+											<gmd:function>
+												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="calibrationInformation"/>
+											</gmd:function>
+										</gmd:CI_OnlineResource>
+									</gmd:onlineResource>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<gmd:role/>
+						</gmd:CI_ResponsibleParty>
+					</gmd:citedResponsibleParty>
+					<gmd:citedResponsibleParty>
+						<gmd:CI_ResponsibleParty>
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:onlineResource>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL>http://www.imd.gov.in/section/satmet/dynamic/INSAT3D_Catalog.pdf</gmd:URL>
+											</gmd:linkage>
+											<gmd:name>
+												<gco:CharacterString>Information regarding the products</gco:CharacterString>
+											</gmd:name>
+											<gmd:function>
+												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="productInformation"/>
+											</gmd:function>
+										</gmd:CI_OnlineResource>
+									</gmd:onlineResource>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<gmd:role/>
+						</gmd:CI_ResponsibleParty>
+					</gmd:citedResponsibleParty>
+				</gmd:CI_Citation>
+			</gmd:citation>
+			<gmd:abstract>
+				<gco:CharacterString>The advanced Indian meteorological geostationary satellite INSAT-3D is placed at 82oE with improved version of imager over the Indian Ocean region for the purpose of enhanced meteorological research and operational needs. The INSAT-3D imager has 6 spectral channels and these channels are: i) Visible (VIS) for [0.55–0.75 µm], ii) Short-wave infrared (SWIR) for [1.55–1.70 µm], iii) Mid-wave infrared (MIR) for [3.8–4.0µm], iv) Water vapor (WV) for [6.5–7.1 µm] and v) two split-window thermal infrared (TIR1 and TIR2) for [10.2–11.3 µm] and [11.5–12.5 µm] ranges of spectrum respectively. The spatial resolution of VIS and SWIR channels is 1 km, for MIR, TIR1 and TIR2 channels is 4 km and for WV channels is 8 km respectively. The full-disc imager data is available at every 30-minute. For the operational retrieval of AMVs data from the VIS, MIR, WV and TIR1 re-sampled at 4 km spatial resolution with a coverage area [30o-130oE, 50oS-50oN] over the Indian Ocean region are used. The retrieval process is done at each acquisition i.e. at every 30-minute interval with same coverage area.The major steps of AMV retrieval algorithm consists of: a) Tracer selection, b) Height assignment of selected tracers, c) Tracer tracking in the subsequent images and finally d) Quality control.The tracers are selected by computing local image anomaly in 32 x 32 template window, both in cloudy and cloud free regions irrespective of spectral channels. The anomaly-based tracers are generally produced by a smooth feature field in comparison to the gradient-based features and it helps in reducing the tracking errors (Deb et al. 2008). Since MIR channel is characterized by relatively small gradient in brightness temperature in the warmer low-level, which limits the detect-ability of good cloud tracer, hence before selecting any tracer in MIR channel, the images are enhanced by stretching the brightness temperature contrast in the warmer end of the spectrum (low-levels). This enhancement greatly improves the low-level wind at the cost of mid to upper-level. Due to the proximity of this channel to sunlight, the MIR channel data is used only during the night time for the AMV retrieval. 
+
+The height assignments of the selected tracers in WV and TIR1 images are derived using the widely used methods such as the infrared window (WIN) technique or the water vapor histogram method (HIST), the H2O intercept method (Nieman et al. 1993) and the cloud base method (LeMarshall 1993). The height assignment of selected tracers in VIS and MIR images are estimated using collocated TIR1 channel brightness temperature with infrared window (WIN) technique. The National Center for Environmental Prediction (NCEP) 6-hourly forecast temperature, humidity and wind profiles nearest at the retrieval time are used as first guess during the retrieval process. Finally, the optimization of height assignment is also done by taking the minimized height difference with respect to first guess forecast. 
+
+Once a tracer is identified in the first image and its height assignment is being done, the match of this tracer is searched in the second image within a bigger search window of 64 x 64 pixels, centered at the same point as the tracer window. The prior height assignment of tracer helps to employ a representative 6-hourly numerical wind forecast for optimizing the position of search domain as bigger search window in the second image, which was not there in Kalpana-1 operational algorithm. The degrees of matching between two successive images are calculated by the Nash-Sutcliffe model efficiency (Nash and Sutcliffe 1970) coefficient (E). The use of this tracking procedure in estimation of winds has shown some improvement over the Indian Ocean region (Deb et al. 2008). 
+
+The quality control procedure involves different checks based on vector acceleration checks. In this process the derived vectors are compared with their surrounding vectors and collocated forecast fields. The vectors that show an acceleration, directional deviation, or discrepancy to other observations larger than a predefined value is rejected. In the INSAT-3D operational algorithm, the automatic quality control procedure developed at European Organization for the Exploitation of Meteorological Satellites [EUMETSAT] (Holmlund 1998) called as EUMETSAT Quality Indicator (QI) is implemented with little modification. Traditionally the EUMETSAT QI procedure uses two sets of winds (i.e. Two sets of winds derived from 1-2 images and 2-3 images) for quality control and accept a vector if it is available in both sets. If this is not there, such vectors are rejected, because they don’t get ‘support’. Many such isolated vectors thus get removed during quality control, even though they may represent the accurate retrieval. However, in the INSAT-3D AMV quality control process, a wind buffer is created using retrieved winds vectors derived from the previous eight pairs of images (i.e. the winds retrieved using images 1-2, 2-3, 3-4, 4-5, 5-6, 6-7, 7-8 and 8-9) and stored in a file. Later, this wind buffer is used during the quality control process. In this step, the vector under consideration might get support from any of the past eight sets and produces a higher number of valid wind retrievals at all levels. The detail about this quality control procedure is illustrated in Deb et al. 2015. </gco:CharacterString>
+			</gmd:abstract>
+			<gmd:status>
+				<gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="OnGoing"/>
+			</gmd:status>
+			<gmd:pointOfContact>
+				<gmd:CI_ResponsibleParty>
+					<gmd:individualName>
+						<gco:CharacterString>India Meteorological department</gco:CharacterString>
+					</gmd:individualName>
+					<gmd:organisationName>
+						<gco:CharacterString>IMD</gco:CharacterString>
+					</gmd:organisationName>
+					<gmd:contactInfo>
+						<gmd:CI_Contact>
+							<gmd:phone>
+								<gmd:CI_Telephone>
+									<gmd:voice>
+										<gco:CharacterString>telephone here...</gco:CharacterString>
+									</gmd:voice>
+								</gmd:CI_Telephone>
+							</gmd:phone>
+							<gmd:address>
+								<gmd:CI_Address>
+									<gmd:deliveryPoint>
+										<gco:CharacterString>Street...</gco:CharacterString>
+									</gmd:deliveryPoint>
+									<gmd:city>
+										<gco:CharacterString>City</gco:CharacterString>
+									</gmd:city>
+									<gmd:administrativeArea>
+										<gco:CharacterString>Name...</gco:CharacterString>
+									</gmd:administrativeArea>
+									<gmd:postalCode>
+										<gco:CharacterString>Code...</gco:CharacterString>
+									</gmd:postalCode>
+									<gmd:country>
+										<gco:CharacterString>India</gco:CharacterString>
+									</gmd:country>
+									<gmd:electronicMailAddress>
+										<gco:CharacterString>email...</gco:CharacterString>
+									</gmd:electronicMailAddress>
+								</gmd:CI_Address>
+							</gmd:address>
+							<gmd:onlineResource>
+								<gmd:CI_OnlineResource>
+									<gmd:linkage>
+										<gmd:URL>http://www.imd....</gmd:URL>
+									</gmd:linkage>
+								</gmd:CI_OnlineResource>
+							</gmd:onlineResource>
+						</gmd:CI_Contact>
+					</gmd:contactInfo>
+					<gmd:role>
+						<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+					</gmd:role>
+				</gmd:CI_ResponsibleParty>
+			</gmd:pointOfContact>
+			<gmd:graphicOverview>
+				<gmd:MD_BrowseGraphic>
+					<gmd:fileName>
+						<gco:CharacterString>http://www...</gco:CharacterString>
+					</gmd:fileName>
+				</gmd:MD_BrowseGraphic>
+			</gmd:graphicOverview>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Atmosphere</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="product">product</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2008-06-01</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>Atmospheric Temperature</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>http://www.wmo-sat.info/product-access-guide/advanced-search</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2010-01-01</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>satelliteObservation</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:type>
+						<MD_KeywordTypeCode xmlns="http://www.isotc211.org/2005/gmd" codeListValue="theme" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">theme</MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>WMO_CategoryCode</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2008-06-01</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="publication" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"/>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<gco:CharacterString>OriginatingCentre</gco:CharacterString>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeListValue="dataCentre" codeList="http://wis.wmo.int/2012/codelists/WMOCodeLists.xml#MD_DistributionScopeCode">dataCentre</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>WMO_DistributionScopeCode, WMOCodelists dictionary Version 1.3 http://wis.wmo.int/2012/codelists/WMOCodeLists.xml#WMO_DistributionScopeCode</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2013-02-14Z</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="publication" codeList="http://wis.wmo.int/2012/codelists/WMOCodeLists.xml#CI_DateTypeCode">publication</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:citedResponsibleParty>
+								<gmd:CI_ResponsibleParty>
+									<gmd:organisationName>
+										<gco:CharacterString>WMO Secretariat</gco:CharacterString>
+									</gmd:organisationName>
+									<gmd:contactInfo>
+										<gmd:CI_Contact>
+											<gmd:onlineResource>
+												<gmd:CI_OnlineResource>
+													<gmd:linkage>
+														<gmd:URL>http://www.wmo.int/pages/about/sec/sg_en.html</gmd:URL>
+													</gmd:linkage>
+													<gmd:protocol>
+														<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
+													</gmd:protocol>
+												</gmd:CI_OnlineResource>
+											</gmd:onlineResource>
+										</gmd:CI_Contact>
+									</gmd:contactInfo>
+									<gmd:role>
+										<gmd:CI_RoleCode codeListValue="publisher" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/gmxCodelists.xml#CI_RoleCode">publisher</gmd:CI_RoleCode>
+									</gmd:role>
+								</gmd:CI_ResponsibleParty>
+							</gmd:citedResponsibleParty>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<!-- Instrument IMAGER (INSAT) (http://www.wmo-sat.info/oscar/instruments/view/218) of InstrumenType Moderate-resolution optical imager (http://www.wmo-sat.info/oscar/instrumenttypes/view/1) -->
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/218" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/1">IMAGER (INSAT)</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeListValue="instrument" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">instrument</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>OSCAR (Observing Systems Capability Analysis and Review Tool) List of all Instruments (http://www.wmo-sat.info/oscar/instruments)</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2016-02-10</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="revision" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">revision</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:citedResponsibleParty>
+								<gmd:CI_ResponsibleParty>
+									<gmd:organisationName>
+										<gco:CharacterString>WMO Secretariat</gco:CharacterString>
+									</gmd:organisationName>
+									<gmd:contactInfo>
+										<gmd:CI_Contact>
+											<gmd:onlineResource>
+												<gmd:CI_OnlineResource>
+													<gmd:linkage>
+														<gmd:URL>http://www.wmo.int/pages/about/sec/sg_en.html</gmd:URL>
+													</gmd:linkage>
+													<gmd:protocol>
+														<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
+													</gmd:protocol>
+												</gmd:CI_OnlineResource>
+											</gmd:onlineResource>
+										</gmd:CI_Contact>
+									</gmd:contactInfo>
+									<gmd:role>
+										<gmd:CI_RoleCode codeListValue="publisher" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode">publisher</gmd:CI_RoleCode>
+									</gmd:role>
+								</gmd:CI_ResponsibleParty>
+							</gmd:citedResponsibleParty>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<!-- Platform (Satellite) INSAT-3D (http://www.wmo-sat.info/oscar/satellites/view/193) -->
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/satellites/view/193" xlink:actuate="onRequest">INSAT-3D</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeListValue="platform" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">platform</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+						<gmd:CI_Citation>
+							<gmd:title>
+								<gco:CharacterString>OSCAR (Observing Systems Capability Analysis and Review Tool) List of all Satellites (http://www.wmo-sat.info/oscar/satellites)</gco:CharacterString>
+							</gmd:title>
+							<gmd:date>
+								<gmd:CI_Date>
+									<gmd:date>
+										<gco:Date>2016-02-10</gco:Date>
+									</gmd:date>
+									<gmd:dateType>
+										<gmd:CI_DateTypeCode codeListValue="revision" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">revision</gmd:CI_DateTypeCode>
+									</gmd:dateType>
+								</gmd:CI_Date>
+							</gmd:date>
+							<gmd:citedResponsibleParty>
+								<gmd:CI_ResponsibleParty>
+									<gmd:organisationName>
+										<gco:CharacterString>WMO Secretariat</gco:CharacterString>
+									</gmd:organisationName>
+									<gmd:contactInfo>
+										<gmd:CI_Contact>
+											<gmd:onlineResource>
+												<gmd:CI_OnlineResource>
+													<gmd:linkage>
+														<gmd:URL>http://www.wmo.int/pages/about/sec/sg_en.html</gmd:URL>
+													</gmd:linkage>
+													<gmd:protocol>
+														<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
+													</gmd:protocol>
+												</gmd:CI_OnlineResource>
+											</gmd:onlineResource>
+										</gmd:CI_Contact>
+									</gmd:contactInfo>
+									<gmd:role>
+										<gmd:CI_RoleCode codeListValue="publisher" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode">publisher</gmd:CI_RoleCode>
+									</gmd:role>
+								</gmd:CI_ResponsibleParty>
+							</gmd:citedResponsibleParty>
+						</gmd:CI_Citation>
+					</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
+			<gmd:resourceConstraints>
+				<gmd:MD_LegalConstraints>
+					<gmd:accessConstraints>
+						<gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PublicallyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+					</gmd:accessConstraints>
+					<gmd:useConstraints>
+						<gmd:MD_RestrictionCode codeList="http://standards.iso.org/ittf/PublicallyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</gmd:MD_RestrictionCode>
+					</gmd:useConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>WMOEssential</gco:CharacterString>
+					</gmd:otherConstraints>
+					<gmd:otherConstraints>
+						<gco:CharacterString>GTSPriority3</gco:CharacterString>
+					</gmd:otherConstraints>
+				</gmd:MD_LegalConstraints>
+			</gmd:resourceConstraints>
+			<gmd:spatialRepresentationType>
+				<gmd:MD_SpatialRepresentationTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="grid"/>
+			</gmd:spatialRepresentationType>
+			<gmd:language>
+				<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
+			</gmd:language>
+			<gmd:characterSet>
+				<gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_CharacterSetCode" codeListValue="utf8"/>
+			</gmd:characterSet>
+			<gmd:topicCategory>
+				<gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+			</gmd:topicCategory>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicBoundingBox>
+							<gmd:extentTypeCode>
+								<gco:Boolean>true</gco:Boolean>
+							</gmd:extentTypeCode>
+							<gmd:westBoundLongitude>
+								<gco:Decimal>30.0</gco:Decimal>
+							</gmd:westBoundLongitude>
+							<gmd:eastBoundLongitude>
+								<gco:Decimal>130.0</gco:Decimal>
+							</gmd:eastBoundLongitude>
+							<gmd:southBoundLatitude>
+								<gco:Decimal>-40.0</gco:Decimal>
+							</gmd:southBoundLatitude>
+							<gmd:northBoundLatitude>
+								<gco:Decimal>40.0</gco:Decimal>
+							</gmd:northBoundLatitude>
+						</gmd:EX_GeographicBoundingBox>
+					</gmd:geographicElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:geographicElement>
+						<gmd:EX_GeographicDescription>
+							<gmd:geographicIdentifier>
+								<gmd:MD_Identifier>
+									<gmd:code>
+										<gco:CharacterString>India</gco:CharacterString>
+									</gmd:code>
+								</gmd:MD_Identifier>
+							</gmd:geographicIdentifier>
+						</gmd:EX_GeographicDescription>
+					</gmd:geographicElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+			<gmd:extent>
+				<gmd:EX_Extent>
+					<gmd:temporalElement>
+						<gmd:EX_TemporalExtent id="boundingTemporalExtent">
+							<gmd:extent>
+								<gml:TimePeriod gml:id="validTimeRange">
+									<gml:beginPosition>2014-01-15T00:00:00Z</gml:beginPosition>
+									<gml:endPosition indeterminatePosition="now"/>
+								</gml:TimePeriod>
+							</gmd:extent>
+						</gmd:EX_TemporalExtent>
+					</gmd:temporalElement>
+				</gmd:EX_Extent>
+			</gmd:extent>
+		</gmd:MD_DataIdentification>
+	</gmd:identificationInfo>
+	<gmd:contentInfo>
+		<gmd:MD_ImageDescription>
+			<gmd:attributeDescription/>
+			<gmd:contentType/>
+			<gmd:processingLevelCode>
+				<gmd:MD_Identifier>
+					<gmd:authority>
+						<gmd:CI_Citation>
+							<gmd:title/>
+							<gmd:date/>
+							<gmd:citedResponsibleParty>
+								<gmd:CI_ResponsibleParty>
+									<gmd:organisationName>
+										<gco:CharacterString>IMD/ISRO</gco:CharacterString>
+									</gmd:organisationName>
+									<gmd:role/>
+								</gmd:CI_ResponsibleParty>
+							</gmd:citedResponsibleParty>
+						</gmd:CI_Citation>
+					</gmd:authority>
+					<gmd:code>
+						<gco:CharacterString>L2-P</gco:CharacterString>
+					</gmd:code>
+				</gmd:MD_Identifier>
+			</gmd:processingLevelCode>
+		</gmd:MD_ImageDescription>
+	</gmd:contentInfo>
+	<gmd:distributionInfo>
+		<gmd:MD_Distribution>
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>HDF</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>5</gco:CharacterString>
+					</gmd:version>
+					<gmd:formatDistributor>
+						<gmd:MD_Distributor>
+							<gmd:distributorContact xlink:href="#id_IMD"/>
+							<gmd:distributorTransferOptions>
+								<gmd:MD_DigitalTransferOptions>
+									<gmd:unitsOfDistribution>
+										<gco:CharacterString>KB</gco:CharacterString>
+									</gmd:unitsOfDistribution>
+									<gmd:transferSize>
+										<gco:Real>600.0</gco:Real>
+									</gmd:transferSize>
+									<gmd:onLine>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL> http://www.imd.gov.in/section/satmet/dynamic/insat.htm</gmd:URL>
+											</gmd:linkage>
+											<gmd:protocol>
+												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+											</gmd:protocol>
+											<gmd:name>
+												<gco:CharacterString>IMD Web</gco:CharacterString>
+											</gmd:name>
+											<gmd:function>
+												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
+											</gmd:function>
+										</gmd:CI_OnlineResource>
+									</gmd:onLine>
+								</gmd:MD_DigitalTransferOptions>
+							</gmd:distributorTransferOptions>
+						</gmd:MD_Distributor>
+					</gmd:formatDistributor>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>BUFR</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>-</gco:CharacterString>
+					</gmd:version>
+					<gmd:formatDistributor>
+						<gmd:MD_Distributor>
+							<gmd:distributorContact xlink:href="#id_IMD"/>
+							<gmd:distributorTransferOptions>
+								<gmd:MD_DigitalTransferOptions>
+									<gmd:unitsOfDistribution>
+										<gco:CharacterString>KB</gco:CharacterString>
+									</gmd:unitsOfDistribution>
+									<gmd:transferSize>
+										<gco:Real>120.0</gco:Real>
+									</gmd:transferSize>
+									<gmd:onLine>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL> http://www.imd.gov.in/section/satmet/dynamic/insat.htm</gmd:URL>
+											</gmd:linkage>
+											<gmd:protocol>
+												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+											</gmd:protocol>
+											<gmd:name>
+												<gco:CharacterString>IMD Web</gco:CharacterString>
+											</gmd:name>
+											<gmd:function>
+												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
+											</gmd:function>
+										</gmd:CI_OnlineResource>
+									</gmd:onLine>
+								</gmd:MD_DigitalTransferOptions>
+							</gmd:distributorTransferOptions>
+						</gmd:MD_Distributor>
+					</gmd:formatDistributor>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+			<gmd:distributionFormat>
+				<gmd:MD_Format>
+					<gmd:name>
+						<gco:CharacterString>GIF</gco:CharacterString>
+					</gmd:name>
+					<gmd:version>
+						<gco:CharacterString>-</gco:CharacterString>
+					</gmd:version>
+					<gmd:formatDistributor>
+						<gmd:MD_Distributor>
+							<gmd:distributorContact xlink:href="#id_IMD"/>
+							<gmd:distributorTransferOptions>
+								<gmd:MD_DigitalTransferOptions>
+									<gmd:unitsOfDistribution>
+										<gco:CharacterString>KB</gco:CharacterString>
+									</gmd:unitsOfDistribution>
+									<gmd:transferSize>
+										<gco:Real>3500.0</gco:Real>
+									</gmd:transferSize>
+									<gmd:onLine>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL> http://www.imd.gov.in/section/satmet/dynamic/insat.htm</gmd:URL>
+											</gmd:linkage>
+											<gmd:protocol>
+												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
+											</gmd:protocol>
+											<gmd:name>
+												<gco:CharacterString>IMD Web</gco:CharacterString>
+											</gmd:name>
+											<gmd:function>
+												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
+											</gmd:function>
+										</gmd:CI_OnlineResource>
+									</gmd:onLine>
+								</gmd:MD_DigitalTransferOptions>
+							</gmd:distributorTransferOptions>
+						</gmd:MD_Distributor>
+					</gmd:formatDistributor>
+				</gmd:MD_Format>
+			</gmd:distributionFormat>
+			<gmd:distributor>
+				<gmd:MD_Distributor>
+					<gmd:distributorContact>
+						<gmd:CI_ResponsibleParty id="id_IMD">
+							<gmd:individualName>
+								<gco:CharacterString>India Meteorological department</gco:CharacterString>
+							</gmd:individualName>
+							<gmd:organisationName>
+								<gco:CharacterString>IMD</gco:CharacterString>
+							</gmd:organisationName>
+							<gmd:contactInfo>
+								<gmd:CI_Contact>
+									<gmd:phone>
+										<gmd:CI_Telephone>
+											<gmd:voice>
+												<gco:CharacterString>telephone here...</gco:CharacterString>
+											</gmd:voice>
+										</gmd:CI_Telephone>
+									</gmd:phone>
+									<gmd:address>
+										<gmd:CI_Address>
+											<gmd:deliveryPoint>
+												<gco:CharacterString>Street...</gco:CharacterString>
+											</gmd:deliveryPoint>
+											<gmd:city>
+												<gco:CharacterString>City</gco:CharacterString>
+											</gmd:city>
+											<gmd:administrativeArea>
+												<gco:CharacterString>Name...</gco:CharacterString>
+											</gmd:administrativeArea>
+											<gmd:postalCode>
+												<gco:CharacterString>Code...</gco:CharacterString>
+											</gmd:postalCode>
+											<gmd:country>
+												<gco:CharacterString>India</gco:CharacterString>
+											</gmd:country>
+											<gmd:electronicMailAddress>
+												<gco:CharacterString>email...</gco:CharacterString>
+											</gmd:electronicMailAddress>
+										</gmd:CI_Address>
+									</gmd:address>
+									<gmd:onlineResource>
+										<gmd:CI_OnlineResource>
+											<gmd:linkage>
+												<gmd:URL>http://www.imd....</gmd:URL>
+											</gmd:linkage>
+										</gmd:CI_OnlineResource>
+									</gmd:onlineResource>
+								</gmd:CI_Contact>
+							</gmd:contactInfo>
+							<gmd:role>
+								<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="owner">owner</gmd:CI_RoleCode>
+							</gmd:role>
+						</gmd:CI_ResponsibleParty>
+					</gmd:distributorContact>
+				</gmd:MD_Distributor>
+			</gmd:distributor>
+		</gmd:MD_Distribution>
+	</gmd:distributionInfo>
+	<gmd:dataQualityInfo>
+		<gmd:DQ_DataQuality>
+			<gmd:scope>
+				<gmd:DQ_Scope>
+					<gmd:level>
+						<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
+					</gmd:level>
+				</gmd:DQ_Scope>
+			</gmd:scope>
+			<gmd:lineage>
+				<gmd:LI_Lineage>
+					<gmd:statement>
+						<gco:CharacterString>any additional information about the events or source data used in constructing the dataset...</gco:CharacterString>
+					</gmd:statement>
+				</gmd:LI_Lineage>
+			</gmd:lineage>
+		</gmd:DQ_DataQuality>
+	</gmd:dataQualityInfo>
+</gmd:MD_Metadata>
