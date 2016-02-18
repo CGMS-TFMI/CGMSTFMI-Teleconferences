@@ -4,7 +4,6 @@
 	<!-- Author: Dr. Uwe Voges (con terra GmbH) -->
 	<!-- CreationDate: 23-12-2015 - created from a tabular metadata example Guillaume Aubert provided in Github -->
 	<!-- RevisionDate: 16-02-2016 - aligned with simplified CGMS model as agreed upon in last telcos -->
-	
 	<!-- fileIdentifier: UID for a dataset -->
 	<gmd:fileIdentifier>
 		<gco:CharacterString>EO:EUM:DAT:MSG:HRSEVIRI</gco:CharacterString>
@@ -12,13 +11,8 @@
 	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
 	</gmd:language>
-	<gmd:language>
-		<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
-	</gmd:language>
 	<gmd:hierarchyLevel>
-		<gmd:MD_ScopeCode
-			codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode"
-			codeListValue="series"/>
+		<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
 	</gmd:hierarchyLevel>
 	<gmd:hierarchyLevelName>
 		<gco:CharacterString>sat.MSG</gco:CharacterString>
@@ -96,9 +90,7 @@
 				</gmd:CI_Contact>
 			</gmd:contactInfo>
 			<gmd:role>
-				<gmd:CI_RoleCode
-					codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode"
-					codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+				<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
 			</gmd:role>
 		</gmd:CI_ResponsibleParty>
 	</gmd:contact>
@@ -131,9 +123,7 @@
 								<gco:Date>2009-03-23</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
-								<gmd:CI_DateTypeCode
-									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"
-									codeListValue="creation"/>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
 							</gmd:dateType>
 						</gmd:CI_Date>
 					</gmd:date>
@@ -143,9 +133,7 @@
 								<gco:Date>2010-09-21</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
-								<gmd:CI_DateTypeCode
-									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"
-									codeListValue="revision"/>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision"/>
 							</gmd:dateType>
 						</gmd:CI_Date>
 					</gmd:date>
@@ -155,9 +143,7 @@
 								<gco:Date>2009-04-23</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
-								<gmd:CI_DateTypeCode
-									codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"
-									codeListValue="publication"/>
+								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
 							</gmd:dateType>
 						</gmd:CI_Date>
 					</gmd:date>
@@ -281,9 +267,7 @@
 						</gmd:CI_Contact>
 					</gmd:contactInfo>
 					<gmd:role>
-						<gmd:CI_RoleCode
-							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode"
-							codeListValue="originator">originator</gmd:CI_RoleCode>
+						<gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="originator">originator</gmd:CI_RoleCode>
 					</gmd:role>
 				</gmd:CI_ResponsibleParty>
 			</gmd:pointOfContact>
@@ -306,9 +290,7 @@
 						<gco:CharacterString>Atmospheric conditions</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
-						<gmd:MD_KeywordTypeCode
-							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode"
-							codeListValue="theme"/>
+						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
 					</gmd:type>
 					<gmd:thesaurusName>
 						<gmd:CI_Citation>
@@ -322,9 +304,7 @@
 										<gco:Date>2008-06-01</gco:Date>
 									</gmd:date>
 									<gmd:dateType>
-										<gmd:CI_DateTypeCode
-											codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"
-											codeListValue="publication">publication</gmd:CI_DateTypeCode>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
 									</gmd:dateType>
 								</gmd:CI_Date>
 							</gmd:date>
@@ -338,9 +318,7 @@
 						<gco:CharacterString>Weather</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
-						<gmd:MD_KeywordTypeCode
-							codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#MD_KeywordTypeCode"
-							codeListValue="socialBenefitArea"/>
+						<gmd:MD_KeywordTypeCode codeList="http://navigator.eumetsat.int/metadata_schema/eum/resources/Codelist/eum_gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="socialBenefitArea"/>
 					</gmd:type>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
@@ -359,9 +337,7 @@
 						<gco:CharacterString>Atmosphere</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
-						<gmd:MD_KeywordTypeCode
-							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode"
-							codeListValue="theme"/>
+						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
 					</gmd:type>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
@@ -383,9 +359,7 @@
 						<gco:CharacterString>EUMETSAT Data Centre</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
-						<gmd:MD_KeywordTypeCode
-							codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#"
-							codeListValue="place"/>
+						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#" codeListValue="place"/>
 					</gmd:type>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
