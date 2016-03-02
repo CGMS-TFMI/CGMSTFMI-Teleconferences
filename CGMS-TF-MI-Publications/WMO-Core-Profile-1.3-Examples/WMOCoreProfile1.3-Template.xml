@@ -473,6 +473,7 @@
 					</gmd:thesaurusName>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
+            <!-- Data Policy Part. Dataset is qualified as WMO Essential. Check the WMO WIS Guide when other Data Policies need to be applied (WMO Additional, Data not delivered on the GTS with another data policy) -->
 			<gmd:resourceConstraints>
 				<gmd:MD_LegalConstraints>
 					<gmd:accessConstraints>
@@ -503,35 +504,37 @@
 			</gmd:topicCategory>
 			<gmd:extent>
 				<gmd:EX_Extent>
+                    <!-- GEOSPATIAL EXTENT. To be added as a bounding box -->
 					<gmd:geographicElement>
 						<gmd:EX_GeographicBoundingBox>
 							<gmd:extentTypeCode>
 								<gco:Boolean>true</gco:Boolean>
 							</gmd:extentTypeCode>
 							<gmd:westBoundLongitude>
-								<gco:Decimal>30.0</gco:Decimal>
+								<gco:Decimal>-79.0</gco:Decimal>
 							</gmd:westBoundLongitude>
 							<gmd:eastBoundLongitude>
-								<gco:Decimal>130.0</gco:Decimal>
+								<gco:Decimal>79.0</gco:Decimal>
 							</gmd:eastBoundLongitude>
 							<gmd:southBoundLatitude>
-								<gco:Decimal>-40.0</gco:Decimal>
+								<gco:Decimal>-81.0</gco:Decimal>
 							</gmd:southBoundLatitude>
 							<gmd:northBoundLatitude>
-								<gco:Decimal>40.0</gco:Decimal>
+								<gco:Decimal>81.0</gco:Decimal>
 							</gmd:northBoundLatitude>
 						</gmd:EX_GeographicBoundingBox>
 					</gmd:geographicElement>
 				</gmd:EX_Extent>
 			</gmd:extent>
 			<gmd:extent>
+                <!-- ADD Geographic Identifier -->
 				<gmd:EX_Extent>
 					<gmd:geographicElement>
 						<gmd:EX_GeographicDescription>
 							<gmd:geographicIdentifier>
 								<gmd:MD_Identifier>
 									<gmd:code>
-										<gco:CharacterString>India</gco:CharacterString>
+										<gco:CharacterString>Full Disk 0 degrees</gco:CharacterString>
 									</gmd:code>
 								</gmd:MD_Identifier>
 							</gmd:geographicIdentifier>
@@ -541,11 +544,12 @@
 			</gmd:extent>
 			<gmd:extent>
 				<gmd:EX_Extent>
+                    <!-- PRODUCT TEMPORAL INFORMATION. Check documentation for more information. -->
 					<gmd:temporalElement>
 						<gmd:EX_TemporalExtent id="boundingTemporalExtent">
 							<gmd:extent>
 								<gml:TimePeriod gml:id="validTimeRange">
-									<gml:beginPosition>2014-01-15T00:00:00Z</gml:beginPosition>
+									<gml:beginPosition>2004-01-19</gml:beginPosition>
 									<gml:endPosition indeterminatePosition="now"/>
 								</gml:TimePeriod>
 							</gmd:extent>
@@ -556,6 +560,7 @@
 		</gmd:MD_DataIdentification>
 	</gmd:identificationInfo>
 	<gmd:contentInfo>
+        <!-- PRODUCT INFORMATION -->
 		<gmd:MD_ImageDescription>
 			<gmd:attributeDescription/>
 			<gmd:contentType/>
@@ -568,7 +573,7 @@
 							<gmd:citedResponsibleParty>
 								<gmd:CI_ResponsibleParty>
 									<gmd:organisationName>
-										<gco:CharacterString>IMD/ISRO</gco:CharacterString>
+										<gco:CharacterString>ADD ORGANISATION (e.g: EUMETSAT)</gco:CharacterString>
 									</gmd:organisationName>
 									<gmd:role/>
 								</gmd:CI_ResponsibleParty>
@@ -576,43 +581,46 @@
 						</gmd:CI_Citation>
 					</gmd:authority>
 					<gmd:code>
-						<gco:CharacterString>L2-P</gco:CharacterString>
+						<gco:CharacterString>ADD PRODUCT LEVEL (e.g: L1.5 or L2, ...)</gco:CharacterString>
 					</gmd:code>
 				</gmd:MD_Identifier>
 			</gmd:processingLevelCode>
 		</gmd:MD_ImageDescription>
 	</gmd:contentInfo>
+    <!-- ADD INFORMATION RELATED To the Data DISTRIBUTION (FORMATS, ....) -->
 	<gmd:distributionInfo>
 		<gmd:MD_Distribution>
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>HDF</gco:CharacterString>
+						<gco:CharacterString>ADD FORMAT TYPE (eg: GEO HDF)</gco:CharacterString>
 					</gmd:name>
 					<gmd:version>
-						<gco:CharacterString>5</gco:CharacterString>
+						<gco:CharacterString>ADD FORMAT VERSION (eg: 5)</gco:CharacterString>
 					</gmd:version>
 					<gmd:formatDistributor>
 						<gmd:MD_Distributor>
 							<gmd:distributorContact xlink:href="#id_IMD"/>
 							<gmd:distributorTransferOptions>
+                                <!-- ADD INFORMATION regarding the typical size -->
 								<gmd:MD_DigitalTransferOptions>
 									<gmd:unitsOfDistribution>
-										<gco:CharacterString>KB</gco:CharacterString>
+										<gco:CharacterString>MB</gco:CharacterString>
 									</gmd:unitsOfDistribution>
 									<gmd:transferSize>
-										<gco:Real>600.0</gco:Real>
+										<gco:Real>443.0</gco:Real>
 									</gmd:transferSize>
 									<gmd:onLine>
+                                        <!-- ADD THE ONLINE RESOURCE LINK -->
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL> http://www.imd.gov.in/section/satmet/dynamic/insat.htm</gmd:URL>
+												<gmd:URL>http://eoportal.eumetsat.int/userMgmt/protected/dataCentre.faces?acronym=MSG15%26id=EO:EUM:DAT:MSG:HRSEVIRI</gmd:URL>
 											</gmd:linkage>
 											<gmd:protocol>
 												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
 											</gmd:protocol>
 											<gmd:name>
-												<gco:CharacterString>IMD Web</gco:CharacterString>
+												<gco:CharacterString>ADD SERVICE NAME (eg:EUMETSAT Data Centre)</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
@@ -625,10 +633,11 @@
 					</gmd:formatDistributor>
 				</gmd:MD_Format>
 			</gmd:distributionFormat>
+            <!-- REPEAT The gmd:distributionFormat for every available format flavour. Check the guidance documentation for additional information and examples -->
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>BUFR</gco:CharacterString>
+						<gco:CharacterString>HRIT</gco:CharacterString>
 					</gmd:name>
 					<gmd:version>
 						<gco:CharacterString>-</gco:CharacterString>
@@ -639,62 +648,21 @@
 							<gmd:distributorTransferOptions>
 								<gmd:MD_DigitalTransferOptions>
 									<gmd:unitsOfDistribution>
-										<gco:CharacterString>KB</gco:CharacterString>
+										<gco:CharacterString>MB</gco:CharacterString>
 									</gmd:unitsOfDistribution>
 									<gmd:transferSize>
-										<gco:Real>120.0</gco:Real>
+										<gco:Real>1</gco:Real>
 									</gmd:transferSize>
 									<gmd:onLine>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL> http://www.imd.gov.in/section/satmet/dynamic/insat.htm</gmd:URL>
+												<gmd:URL>http://eoportal.eumetsat.int/userMgmt</gmd:URL>
 											</gmd:linkage>
 											<gmd:protocol>
 												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
 											</gmd:protocol>
 											<gmd:name>
-												<gco:CharacterString>IMD Web</gco:CharacterString>
-											</gmd:name>
-											<gmd:function>
-												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
-											</gmd:function>
-										</gmd:CI_OnlineResource>
-									</gmd:onLine>
-								</gmd:MD_DigitalTransferOptions>
-							</gmd:distributorTransferOptions>
-						</gmd:MD_Distributor>
-					</gmd:formatDistributor>
-				</gmd:MD_Format>
-			</gmd:distributionFormat>
-			<gmd:distributionFormat>
-				<gmd:MD_Format>
-					<gmd:name>
-						<gco:CharacterString>GIF</gco:CharacterString>
-					</gmd:name>
-					<gmd:version>
-						<gco:CharacterString>-</gco:CharacterString>
-					</gmd:version>
-					<gmd:formatDistributor>
-						<gmd:MD_Distributor>
-							<gmd:distributorContact xlink:href="#id_IMD"/>
-							<gmd:distributorTransferOptions>
-								<gmd:MD_DigitalTransferOptions>
-									<gmd:unitsOfDistribution>
-										<gco:CharacterString>KB</gco:CharacterString>
-									</gmd:unitsOfDistribution>
-									<gmd:transferSize>
-										<gco:Real>3500.0</gco:Real>
-									</gmd:transferSize>
-									<gmd:onLine>
-										<gmd:CI_OnlineResource>
-											<gmd:linkage>
-												<gmd:URL> http://www.imd.gov.in/section/satmet/dynamic/insat.htm</gmd:URL>
-											</gmd:linkage>
-											<gmd:protocol>
-												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
-											</gmd:protocol>
-											<gmd:name>
-												<gco:CharacterString>IMD Web</gco:CharacterString>
+												<gco:CharacterString>EUMETCAST - EUMETSAT near real time dissemination</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
@@ -710,48 +678,51 @@
 			<gmd:distributor>
 				<gmd:MD_Distributor>
 					<gmd:distributorContact>
-						<gmd:CI_ResponsibleParty id="id_IMD">
+						<gmd:CI_ResponsibleParty id="id_EUM">
 							<gmd:individualName>
-								<gco:CharacterString>India Meteorological department</gco:CharacterString>
+								<gco:CharacterString>ADD DISTRIBUTOR NAME (eg: EUMETSAT)</gco:CharacterString>
 							</gmd:individualName>
 							<gmd:organisationName>
-								<gco:CharacterString>IMD</gco:CharacterString>
+								<gco:CharacterString>ADD DISTRIBUTOR ACRONYM (eg:EUM)</gco:CharacterString>
 							</gmd:organisationName>
 							<gmd:contactInfo>
 								<gmd:CI_Contact>
 									<gmd:phone>
 										<gmd:CI_Telephone>
 											<gmd:voice>
-												<gco:CharacterString>telephone here...</gco:CharacterString>
+												<gco:CharacterString>+49(0)6151-807 3660/3770</gco:CharacterString>
 											</gmd:voice>
+											<gmd:facsimile>
+												<gco:CharacterString>+49(0)6151-807 3790</gco:CharacterString>
+											</gmd:facsimile>
 										</gmd:CI_Telephone>
 									</gmd:phone>
 									<gmd:address>
 										<gmd:CI_Address>
 											<gmd:deliveryPoint>
-												<gco:CharacterString>Street...</gco:CharacterString>
+												<gco:CharacterString>EUMETSAT Allee 1</gco:CharacterString>
 											</gmd:deliveryPoint>
 											<gmd:city>
-												<gco:CharacterString>City</gco:CharacterString>
+												<gco:CharacterString>Darmstadt</gco:CharacterString>
 											</gmd:city>
 											<gmd:administrativeArea>
-												<gco:CharacterString>Name...</gco:CharacterString>
+												<gco:CharacterString>Hessen</gco:CharacterString>
 											</gmd:administrativeArea>
 											<gmd:postalCode>
-												<gco:CharacterString>Code...</gco:CharacterString>
+												<gco:CharacterString>64295</gco:CharacterString>
 											</gmd:postalCode>
 											<gmd:country>
-												<gco:CharacterString>India</gco:CharacterString>
+												<gco:CharacterString>Germany</gco:CharacterString>
 											</gmd:country>
 											<gmd:electronicMailAddress>
-												<gco:CharacterString>email...</gco:CharacterString>
+												<gco:CharacterString>ops@eumetsat.int</gco:CharacterString>
 											</gmd:electronicMailAddress>
 										</gmd:CI_Address>
 									</gmd:address>
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>http://www.imd....</gmd:URL>
+												<gmd:URL>http://www.eumetsat.int</gmd:URL>
 											</gmd:linkage>
 										</gmd:CI_OnlineResource>
 									</gmd:onlineResource>
