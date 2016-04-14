@@ -4,7 +4,7 @@
 	<!-- Author: WMO CGMS TFMI -->
 	<!-- RevisionDate: 16-02-2016 - aligned with simplified CGMS model as agreed upon in last telcos -->
 	<gmd:fileIdentifier>
-		<gco:CharacterString>PRODUCT-UID (urn:x-wmo:md:OrganisationInternetDomainName, e.g urn:x-wmo:md:int.eumetsat.int:EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+		<gco:CharacterString>urn:x-wmo:md:planet.iitp.ru:EO:ROSH:DAT:METEOR-M:MTVZA-GY</gco:CharacterString>
 	</gmd:fileIdentifier>
 	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
@@ -14,39 +14,38 @@
 	</gmd:hierarchyLevel>
 	<!-- contact for the metadata -->
 	<gmd:contact>
-        <!-- Party responsible for the product (e.g NOAA, EUMETSAT, JMA, ....) -->
 		<gmd:CI_ResponsibleParty>
 			<gmd:organisationName>
-				<gco:CharacterString>ORGANISATION-NAME (e.g EUMETSAT)</gco:CharacterString>
+				<gco:CharacterString>ROSHYDROMET (SRC "Planeta")</gco:CharacterString>
 			</gmd:organisationName>
 			<gmd:contactInfo>
 				<gmd:CI_Contact>
 					<gmd:address>
 						<gmd:CI_Address>
 							<gmd:deliveryPoint>
-								<gco:CharacterString>ADDRESS-STREET (e.g Eumetsat-Allee 1)</gco:CharacterString>
+								<gco:CharacterString>Bolshoy Predtechensky pereulok 7</gco:CharacterString>
 							</gmd:deliveryPoint>
 							<gmd:city>
-								<gco:CharacterString>CITY (e.g Darmstadt)</gco:CharacterString>
+								<gco:CharacterString>Moscow</gco:CharacterString>
 							</gmd:city>
 							<gmd:administrativeArea>
-								<gco:CharacterString>REGION (e.g Hessen)</gco:CharacterString>
+								<gco:CharacterString>Not Applicable</gco:CharacterString>
 							</gmd:administrativeArea>
 							<gmd:postalCode>
-								<gco:CharacterString>POSTCODE (e.g 64295)</gco:CharacterString>
+								<gco:CharacterString>123242</gco:CharacterString>
 							</gmd:postalCode>
 							<gmd:country>
-								<gco:CharacterString>COUNTRY (e.g Germany)</gco:CharacterString>
+								<gco:CharacterString>Russian Federation</gco:CharacterString>
 							</gmd:country>
 							<gmd:electronicMailAddress>
-								<gco:CharacterString>CONTACT-EMAIL (e.g ops@eumetsat.int)</gco:CharacterString>
+								<gco:CharacterString>asmus@planet.iitp.ru</gco:CharacterString>
 							</gmd:electronicMailAddress>
 						</gmd:CI_Address>
 					</gmd:address>
 					<gmd:onlineResource>
 						<gmd:CI_OnlineResource>
 							<gmd:linkage>
-								<gmd:URL>ORGANISATION-WEBSITE (e.g http://www.eumetsat.int)</gmd:URL>
+								<gmd:URL>http://planet.iitp.ru</gmd:URL>
 							</gmd:linkage>
 						</gmd:CI_OnlineResource>
 					</gmd:onlineResource>
@@ -74,15 +73,12 @@
 						<gco:CharacterString/>
 					</gmd:title>
 					<gmd:alternateTitle>
-						<gco:CharacterString>PRODUCT-TITLE (e.g High Rate SEVIRI Level 1.5 Image Data - MSG - 0
-                            degree)</gco:CharacterString>
+						<gco:CharacterString>MTVZA-GY Level 1C data Meteor-M N2</gco:CharacterString>
 					</gmd:alternateTitle>
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>PUBLICATION-DATE (e.g 2014-01-20 : publication of the metadata record)</gco:Date>
-
-when the collection was published, when it was first created, when it was last modified =>> no need to provide all three, e.g. just provide the creation-date
+								<gco:Date>2015-11-17</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
@@ -92,7 +88,7 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>CREATION-DATE (e.g 2014-01-15 : creation date of the metadata record)</gco:Date>
+								<gco:Date>2015-11-17</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
@@ -102,7 +98,7 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>LAST-MODIFICATION-DATE (e.g 2014-01-22)</gco:Date>
+								<gco:Date>2015-11-17</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="modification"/>
@@ -110,12 +106,12 @@ when the collection was published, when it was first created, when it was last m
 						</gmd:CI_Date>
 					</gmd:date>
 					<gmd:edition>
-						<gco:CharacterString>Not Applicable</gco:CharacterString>
+						<gco:CharacterString>3</gco:CharacterString>
 					</gmd:edition>
 					<gmd:identifier>
 						<gmd:MD_Identifier>
 							<gmd:code>
-								<gco:CharacterString>ORGANISATION-PRODUCT-IDENTIFIER (EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+								<gco:CharacterString>EO:ROSH:DAT:METEOR-M:MTVZA-GY</gco:CharacterString>
 							</gmd:code>
 						</gmd:MD_Identifier>
 					</gmd:identifier>
@@ -126,10 +122,10 @@ when the collection was published, when it was first created, when it was last m
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>URL-TO-CALIBRATION-INFO (e.g http://www.eumetsat.int/website/home/Data/Products/Calibration/MSGCalibration/index.html)</gmd:URL>
+												<gmd:URL>Not applicable</gmd:URL>
 											</gmd:linkage>
 											<gmd:name>
-												<gco:CharacterString>URL Links to the Calibration information (calibration tables and product information) (e.g Seviri Insturment Calibration  Information)</gco:CharacterString>
+												<gco:CharacterString>Not applicable</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="calibrationInformation"/>
@@ -148,10 +144,10 @@ when the collection was published, when it was first created, when it was last m
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>URL-TO-PRODUCT-INFO (e.g http://www.eumetsat.int/website/home/Data/Products/Level1Data/index.html)</gmd:URL>
+												<gmd:URL>http://planet.iitp.ru/english/spacecraft/meteor_m_n2_structure_eng.htm</gmd:URL>
 											</gmd:linkage>
 											<gmd:name>
-												<gco:CharacterString>Information regarding the products (e.g Meteosat Second Generation product documentation)</gco:CharacterString>
+												<gco:CharacterString>Meteor-M overall design and instrument specifications</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="productInformation"/>
@@ -166,12 +162,9 @@ when the collection was published, when it was first created, when it was last m
 				</gmd:CI_Citation>
 			</gmd:citation>
 			<gmd:abstract>
-				<gco:CharacterString>PRODUCT-ABSTRACT (e.g This is the rectified High Rate Meteosat SEVIRI image data product. It is a High Rate, every 15 mins transmission products in 12 spectral channels.
-                Level 1.5 image data corresponds to the geolocated and radiometrically pre-processed image data, ready for further processing, e.g. the extraction of meteorological products.
-                Any spacecraft specific effects have been removed, and in particular, linearisation and equalisation of the image radiometry has been performed for all SEVIRI channels.
-                The on-board blackbody data has been processed. Both radiometric and geometric quality control information is included.
-                The product is available in HRIT on EUMETCAST the EUMETSAT NRT dissemination system and in a variety of format (native, netcdf, JPG, PNG, Tiff, etc, see distribution part for more information).
-                There are 96 products generated over a complete day (every 15 mins).)</gco:CharacterString>
+				<gco:CharacterString>This is Imaging/Sounding Microwave Radiometer(module for temperature and humidity sounding of the atmosphere - MTVZA-GY) Meteor-M N2 brightness temperatures data product (Level 1C).
+                Level 1C data corresponds to the reconstructed, processed to geophysical variables instrument data at full resolution, time-referenced and annotated with ancillary information,
+                including radiometric and geometric calibration coefficients and georeferencing parameters. The product is available in HDF5 format from SRC Planeta</gco:CharacterString>
 			</gmd:abstract>
 			<gmd:status>
 				<gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="OnGoing"/>
@@ -179,50 +172,49 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:pointOfContact>
 				<gmd:CI_ResponsibleParty>
 					<gmd:individualName>
-						<gco:CharacterString>ORGANISATION-FULL-NAME (e.g European Organisation for the Exploitation of Meteorological
-							Satellites)</gco:CharacterString>
+						<gco:CharacterString>Federal Service for Hydrometeorology and Environmental Monitoring (State Research Center for Space Hydrometeorology "Planeta")</gco:CharacterString>
 					</gmd:individualName>
 					<gmd:organisationName>
-						<gco:CharacterString>ORGANISATION (e.g EUMETSAT)</gco:CharacterString>
+						<gco:CharacterString>ROSHYDROMET (SRC "Planeta")</gco:CharacterString>
 					</gmd:organisationName>
 					<gmd:contactInfo>
 						<gmd:CI_Contact>
 							<gmd:phone>
 								<gmd:CI_Telephone>
 									<gmd:voice>
-										<gco:CharacterString>TELEPHONE (e.g +49(0)6151-807 3660/3770)</gco:CharacterString>
+										<gco:CharacterString>+7(499)252-37-17</gco:CharacterString>
 									</gmd:voice>
 									<gmd:facsimile>
-										<gco:CharacterString>FAX (e.g +49(0)6151-807 3790)</gco:CharacterString>
+										<gco:CharacterString>+7(499)252-66-10</gco:CharacterString>
 									</gmd:facsimile>
 								</gmd:CI_Telephone>
 							</gmd:phone>
 							<gmd:address>
 								<gmd:CI_Address>
 									<gmd:deliveryPoint>
-										<gco:CharacterString>ADDRESS-STREET (e.g EUMETSAT Allee 1)</gco:CharacterString>
+										<gco:CharacterString>Bolshoy Predtechensky pereulok 7</gco:CharacterString>
 									</gmd:deliveryPoint>
 									<gmd:city>
-										<gco:CharacterString>ADDRESS-CITY (e.g Darmstadt)</gco:CharacterString>
+										<gco:CharacterString>Moscow</gco:CharacterString>
 									</gmd:city>
 									<gmd:administrativeArea>
-										<gco:CharacterString>REGION (e.g Hessen)</gco:CharacterString>
+										<gco:CharacterString>Not Applicable</gco:CharacterString>
 									</gmd:administrativeArea>
 									<gmd:postalCode>
-										<gco:CharacterString>POSTCODE (e.g 64295)</gco:CharacterString>
+										<gco:CharacterString>123242</gco:CharacterString>
 									</gmd:postalCode>
 									<gmd:country>
-										<gco:CharacterString>COUNTRY (e.g Germany)</gco:CharacterString>
+										<gco:CharacterString>Russian Federation</gco:CharacterString>
 									</gmd:country>
 									<gmd:electronicMailAddress>
-										<gco:CharacterString>EMAIL (e.g ops@eumetsat.int)</gco:CharacterString>
+										<gco:CharacterString>asmus@planet.iitp.ru</gco:CharacterString>
 									</gmd:electronicMailAddress>
 								</gmd:CI_Address>
 							</gmd:address>
 							<gmd:onlineResource>
 								<gmd:CI_OnlineResource>
 									<gmd:linkage>
-										<gmd:URL>ORGANISATION-URL (e.g http://www.eumetsat.int)</gmd:URL>
+										<gmd:URL>http://planet.iitp.ru</gmd:URL>
 									</gmd:linkage>
 								</gmd:CI_OnlineResource>
 							</gmd:onlineResource>
@@ -236,7 +228,7 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:graphicOverview>
 				<gmd:MD_BrowseGraphic>
 					<gmd:fileName>
-						<gco:CharacterString>PRODUCT-IMAGERY (e.g http://navigator.eumetsat.int:80/smartEditor/preview/msg-level-1-5.jpg)</gco:CharacterString>
+						<gco:CharacterString>Product imagery can be derived from HDF data</gco:CharacterString>
 					</gmd:fileName>
 				</gmd:MD_BrowseGraphic>
 			</gmd:graphicOverview>
@@ -270,7 +262,7 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>Atmospheric Temperature</gco:CharacterString>
+						<gco:CharacterString>Atmospheric Temperature and Humidity</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
@@ -337,7 +329,7 @@ when the collection was published, when it was first created, when it was last m
 							<gmd:date>
 								<gmd:CI_Date>
 									<gmd:date>
-										<gco:Date>2013-02-14Z</gco:Date>
+										<gco:Date>2013-02-14</gco:Date>
 									</gmd:date>
 									<gmd:dateType>
 										<gmd:CI_DateTypeCode codeListValue="publication" codeList="http://wis.wmo.int/2012/codelists/WMOCodeLists.xml#CI_DateTypeCode">publication</gmd:CI_DateTypeCode>
@@ -375,8 +367,8 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<!-- ADD INSTRUMENT OSCAR PAGE (e.g Instrument SEVIRI (EUMETSAT) (http://www.wmo-sat.info/oscar/instruments/view/503) of InstrumenType Moderate-resolution optical imager (http://www.wmo-sat.info/oscar/instrumenttypes/view/1) ) -->
-						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/503" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/1">INSTRUMENT NAME (e.g SEVIRI (EUMETSAT))</gmx:Anchor>
+						<!-- ADD INSTRUMENT OSCAR PAGE -->
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/333" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/5">MTVZA-GY (ROSHYDROMET)</gmx:Anchor>
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeListValue="instrument" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">instrument</gmd:MD_KeywordTypeCode>
@@ -427,8 +419,8 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<!-- PLATFORM-OSCAR-PAGE (e.g Platform/Programm (Satellite) METEOSAT Second Generation (http://www.wmo-sat.info/oscar/satellites/view/193)) -->
-						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/satelliteprogrammes/view/102" xlink:actuate="onRequest">Meteosat Second Generation</gmx:Anchor>
+						<!-- PLATFORM-OSCAR-PAGE -->
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/satellites/view/284" xlink:actuate="onRequest">Meteor-M Number 2</gmx:Anchor>
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeListValue="platform" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">platform</gmd:MD_KeywordTypeCode>
@@ -476,6 +468,58 @@ when the collection was published, when it was first created, when it was last m
 					</gmd:thesaurusName>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<!-- Instrument-IMAGER-OSCAR-PAGE  -->
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/333" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/5">MTVZA-GY (ROSHYDROMET)</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeListValue="platform" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">platform</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>OSCAR (Observing Systems Capability Analysis and Review Tool) List of all Satellites (http://www.wmo-sat.info/oscar/satellites)</gco:CharacterString>
+								</gmd:title>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2016-02-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeListValue="revision" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:citedResponsibleParty>
+									<gmd:CI_ResponsibleParty>
+										<gmd:organisationName>
+											<gco:CharacterString>WMO Secretariat</gco:CharacterString>
+										</gmd:organisationName>
+										<gmd:contactInfo>
+											<gmd:CI_Contact>
+												<gmd:onlineResource>
+													<gmd:CI_OnlineResource>
+														<gmd:linkage>
+															<gmd:URL>http://www.wmo.int/pages/about/sec/sg_en.html</gmd:URL>
+														</gmd:linkage>
+														<gmd:protocol>
+															<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
+														</gmd:protocol>
+													</gmd:CI_OnlineResource>
+												</gmd:onlineResource>
+											</gmd:CI_Contact>
+										</gmd:contactInfo>
+										<gmd:role>
+											<gmd:CI_RoleCode codeListValue="publisher" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode">publisher</gmd:CI_RoleCode>
+										</gmd:role>
+									</gmd:CI_ResponsibleParty>
+								</gmd:citedResponsibleParty>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
             <!-- Data Policy Part. Dataset is qualified as WMO Essential. Check the WMO WIS Guide when other Data Policies need to be applied (WMO Additional, Data not delivered on the GTS with another data policy) -->
 			<gmd:resourceConstraints>
 				<gmd:MD_LegalConstraints>
@@ -489,7 +533,7 @@ when the collection was published, when it was first created, when it was last m
 						<gco:CharacterString>WMOEssential</gco:CharacterString>
 					</gmd:otherConstraints>
 					<gmd:otherConstraints>
-						<gco:CharacterString>GTSPriority3</gco:CharacterString>
+						<gco:CharacterString>Not applicable</gco:CharacterString>
 					</gmd:otherConstraints>
 				</gmd:MD_LegalConstraints>
 			</gmd:resourceConstraints>
@@ -503,7 +547,7 @@ when the collection was published, when it was first created, when it was last m
 				<gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_CharacterSetCode" codeListValue="utf8"/>
 			</gmd:characterSet>
 			<gmd:topicCategory>
-				<gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+				<gmd:MD_TopicCategoryCode>ClimatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
 			</gmd:topicCategory>
 			<gmd:extent>
 				<gmd:EX_Extent>
@@ -511,19 +555,19 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:geographicElement>
 						<gmd:EX_GeographicBoundingBox>
 							<gmd:extentTypeCode>
-								<gco:Boolean>true</gco:Boolean>
+								<gco:Boolean>False</gco:Boolean>
 							</gmd:extentTypeCode>
 							<gmd:westBoundLongitude>
-								<gco:Decimal>-79.0</gco:Decimal>
+								<gco:Decimal>-180.0</gco:Decimal>
 							</gmd:westBoundLongitude>
 							<gmd:eastBoundLongitude>
-								<gco:Decimal>79.0</gco:Decimal>
+								<gco:Decimal>180.0</gco:Decimal>
 							</gmd:eastBoundLongitude>
 							<gmd:southBoundLatitude>
-								<gco:Decimal>-81.0</gco:Decimal>
+								<gco:Decimal>-90.0</gco:Decimal>
 							</gmd:southBoundLatitude>
 							<gmd:northBoundLatitude>
-								<gco:Decimal>81.0</gco:Decimal>
+								<gco:Decimal>90.0</gco:Decimal>
 							</gmd:northBoundLatitude>
 						</gmd:EX_GeographicBoundingBox>
 					</gmd:geographicElement>
@@ -537,7 +581,7 @@ when the collection was published, when it was first created, when it was last m
 							<gmd:geographicIdentifier>
 								<gmd:MD_Identifier>
 									<gmd:code>
-										<gco:CharacterString>Full Disk 0 degrees</gco:CharacterString>
+										<gco:CharacterString>Near-global coverage</gco:CharacterString>
 									</gmd:code>
 								</gmd:MD_Identifier>
 							</gmd:geographicIdentifier>
@@ -552,7 +596,7 @@ when the collection was published, when it was first created, when it was last m
 						<gmd:EX_TemporalExtent id="boundingTemporalExtent">
 							<gmd:extent>
 								<gml:TimePeriod gml:id="validTimeRange">
-									<gml:beginPosition>2004-01-19</gml:beginPosition>
+									<gml:beginPosition>2015-11-17</gml:beginPosition>
 									<gml:endPosition indeterminatePosition="now"/>
 								</gml:TimePeriod>
 							</gmd:extent>
@@ -576,7 +620,7 @@ when the collection was published, when it was first created, when it was last m
 							<gmd:citedResponsibleParty>
 								<gmd:CI_ResponsibleParty>
 									<gmd:organisationName>
-										<gco:CharacterString>ADD ORGANISATION (e.g: EUMETSAT)</gco:CharacterString>
+										<gco:CharacterString>ROSHYDROMET (SRC "Planeta")</gco:CharacterString>
 									</gmd:organisationName>
 									<gmd:role/>
 								</gmd:CI_ResponsibleParty>
@@ -584,7 +628,7 @@ when the collection was published, when it was first created, when it was last m
 						</gmd:CI_Citation>
 					</gmd:authority>
 					<gmd:code>
-						<gco:CharacterString>ADD PRODUCT LEVEL (e.g: L1.5 or L2, ...)</gco:CharacterString>
+						<gco:CharacterString>L1C</gco:CharacterString>
 					</gmd:code>
 				</gmd:MD_Identifier>
 			</gmd:processingLevelCode>
@@ -596,10 +640,10 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>ADD FORMAT TYPE (eg: GEO HDF)</gco:CharacterString>
+						<gco:CharacterString>HDF</gco:CharacterString>
 					</gmd:name>
 					<gmd:version>
-						<gco:CharacterString>ADD FORMAT VERSION (eg: 5)</gco:CharacterString>
+						<gco:CharacterString>5</gco:CharacterString>
 					</gmd:version>
 					<gmd:formatDistributor>
 						<gmd:MD_Distributor>
@@ -611,19 +655,19 @@ when the collection was published, when it was first created, when it was last m
 										<gco:CharacterString>MB</gco:CharacterString>
 									</gmd:unitsOfDistribution>
 									<gmd:transferSize>
-										<gco:Real>443.0</gco:Real>
+										<gco:Real>10.0</gco:Real>
 									</gmd:transferSize>
 									<gmd:onLine>
                                         <!-- ADD THE ONLINE RESOURCE LINK -->
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>http://eoportal.eumetsat.int/userMgmt/protected/dataCentre.faces?acronym=MSG15%26id=EO:EUM:DAT:MSG:HRSEVIRI</gmd:URL>
+												<gmd:URL>Not applicable</gmd:URL>
 											</gmd:linkage>
 											<gmd:protocol>
 												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
 											</gmd:protocol>
 											<gmd:name>
-												<gco:CharacterString>ADD SERVICE NAME (eg:EUMETSAT Data Centre)</gco:CharacterString>
+												<gco:CharacterString>Data is available based on user authentication</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
@@ -640,10 +684,10 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>HRIT</gco:CharacterString>
+						<gco:CharacterString>HDF</gco:CharacterString>
 					</gmd:name>
 					<gmd:version>
-						<gco:CharacterString>-</gco:CharacterString>
+						<gco:CharacterString>5</gco:CharacterString>
 					</gmd:version>
 					<gmd:formatDistributor>
 						<gmd:MD_Distributor>
@@ -654,18 +698,18 @@ when the collection was published, when it was first created, when it was last m
 										<gco:CharacterString>MB</gco:CharacterString>
 									</gmd:unitsOfDistribution>
 									<gmd:transferSize>
-										<gco:Real>1</gco:Real>
+										<gco:Real>10</gco:Real>
 									</gmd:transferSize>
 									<gmd:onLine>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>http://eoportal.eumetsat.int/userMgmt</gmd:URL>
+												<gmd:URL>Not applicable</gmd:URL>
 											</gmd:linkage>
 											<gmd:protocol>
 												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
 											</gmd:protocol>
 											<gmd:name>
-												<gco:CharacterString>EUMETCAST - EUMETSAT near real time dissemination</gco:CharacterString>
+												<gco:CharacterString>Data is available based on user autentification</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
@@ -683,49 +727,49 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:distributorContact>
 						<gmd:CI_ResponsibleParty id="id_EUM">
 							<gmd:individualName>
-								<gco:CharacterString>ADD DISTRIBUTOR NAME (eg: EUMETSAT)</gco:CharacterString>
+								<gco:CharacterString>ROSHYDROMET (SRC "Planeta")</gco:CharacterString>
 							</gmd:individualName>
 							<gmd:organisationName>
-								<gco:CharacterString>ADD DISTRIBUTOR ACRONYM (eg:EUM)</gco:CharacterString>
+								<gco:CharacterString>ROSH</gco:CharacterString>
 							</gmd:organisationName>
 							<gmd:contactInfo>
 								<gmd:CI_Contact>
 									<gmd:phone>
 										<gmd:CI_Telephone>
 											<gmd:voice>
-												<gco:CharacterString>+49(0)6151-807 3660/3770</gco:CharacterString>
+												<gco:CharacterString>+7(499)252-37-17</gco:CharacterString>
 											</gmd:voice>
 											<gmd:facsimile>
-												<gco:CharacterString>+49(0)6151-807 3790</gco:CharacterString>
+												<gco:CharacterString>+7(499)252-66-10</gco:CharacterString>
 											</gmd:facsimile>
 										</gmd:CI_Telephone>
 									</gmd:phone>
 									<gmd:address>
 										<gmd:CI_Address>
 											<gmd:deliveryPoint>
-												<gco:CharacterString>EUMETSAT Allee 1</gco:CharacterString>
+												<gco:CharacterString>Bolshoy Predtechensky pereulok 7</gco:CharacterString>
 											</gmd:deliveryPoint>
 											<gmd:city>
-												<gco:CharacterString>Darmstadt</gco:CharacterString>
+												<gco:CharacterString>Moscow</gco:CharacterString>
 											</gmd:city>
 											<gmd:administrativeArea>
-												<gco:CharacterString>Hessen</gco:CharacterString>
+												<gco:CharacterString>Not Applicable</gco:CharacterString>
 											</gmd:administrativeArea>
 											<gmd:postalCode>
-												<gco:CharacterString>64295</gco:CharacterString>
+												<gco:CharacterString>123242</gco:CharacterString>
 											</gmd:postalCode>
 											<gmd:country>
-												<gco:CharacterString>Germany</gco:CharacterString>
+												<gco:CharacterString>Russian Federation</gco:CharacterString>
 											</gmd:country>
 											<gmd:electronicMailAddress>
-												<gco:CharacterString>ops@eumetsat.int</gco:CharacterString>
+												<gco:CharacterString>asmus@planet.iitp.ru</gco:CharacterString>
 											</gmd:electronicMailAddress>
 										</gmd:CI_Address>
 									</gmd:address>
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>http://www.eumetsat.int</gmd:URL>
+												<gmd:URL>http://planet.iitp.ru</gmd:URL>
 											</gmd:linkage>
 										</gmd:CI_OnlineResource>
 									</gmd:onlineResource>
@@ -740,22 +784,4 @@ when the collection was published, when it was first created, when it was last m
 			</gmd:distributor>
 		</gmd:MD_Distribution>
 	</gmd:distributionInfo>
-	<gmd:dataQualityInfo>
-		<gmd:DQ_DataQuality>
-			<gmd:scope>
-				<gmd:DQ_Scope>
-					<gmd:level>
-						<gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="series"/>
-					</gmd:level>
-				</gmd:DQ_Scope>
-			</gmd:scope>
-			<gmd:lineage>
-				<gmd:LI_Lineage>
-					<gmd:statement>
-						<gco:CharacterString>any additional information about the events or source data used in constructing the dataset...</gco:CharacterString>
-					</gmd:statement>
-				</gmd:LI_Lineage>
-			</gmd:lineage>
-		</gmd:DQ_DataQuality>
-	</gmd:dataQualityInfo>
 </gmd:MD_Metadata>

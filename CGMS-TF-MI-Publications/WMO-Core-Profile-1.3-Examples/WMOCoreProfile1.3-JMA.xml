@@ -4,7 +4,7 @@
 	<!-- Author: WMO CGMS TFMI -->
 	<!-- RevisionDate: 16-02-2016 - aligned with simplified CGMS model as agreed upon in last telcos -->
 	<gmd:fileIdentifier>
-		<gco:CharacterString>PRODUCT-UID (urn:x-wmo:md:OrganisationInternetDomainName, e.g urn:x-wmo:md:int.eumetsat.int:EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+		<gco:CharacterString>urn:x-wmo:md:jma-net.go.jp:EO:JMA:DAT:Himawari-8:HSD</gco:CharacterString> <!-- should be checked  -->
 	</gmd:fileIdentifier>
 	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
@@ -14,39 +14,38 @@
 	</gmd:hierarchyLevel>
 	<!-- contact for the metadata -->
 	<gmd:contact>
-        <!-- Party responsible for the product (e.g NOAA, EUMETSAT, JMA, ....) -->
 		<gmd:CI_ResponsibleParty>
 			<gmd:organisationName>
-				<gco:CharacterString>ORGANISATION-NAME (e.g EUMETSAT)</gco:CharacterString>
+				<gco:CharacterString>JMA</gco:CharacterString> <!-- should be checked  -->
 			</gmd:organisationName>
 			<gmd:contactInfo>
 				<gmd:CI_Contact>
 					<gmd:address>
 						<gmd:CI_Address>
 							<gmd:deliveryPoint>
-								<gco:CharacterString>ADDRESS-STREET (e.g Eumetsat-Allee 1)</gco:CharacterString>
+								<gco:CharacterString>3-235 Nakakiyoto</gco:CharacterString> <!-- should be checked  -->
 							</gmd:deliveryPoint>
 							<gmd:city>
-								<gco:CharacterString>CITY (e.g Darmstadt)</gco:CharacterString>
+								<gco:CharacterString>Kiyose-city</gco:CharacterString> <!-- should be checked  -->
 							</gmd:city>
 							<gmd:administrativeArea>
-								<gco:CharacterString>REGION (e.g Hessen)</gco:CharacterString>
+								<gco:CharacterString>Tokyo</gco:CharacterString> <!-- should be checked  -->
 							</gmd:administrativeArea>
 							<gmd:postalCode>
-								<gco:CharacterString>POSTCODE (e.g 64295)</gco:CharacterString>
+								<gco:CharacterString>2040012</gco:CharacterString> <!-- should be checked  -->
 							</gmd:postalCode>
 							<gmd:country>
-								<gco:CharacterString>COUNTRY (e.g Germany)</gco:CharacterString>
+								<gco:CharacterString>Japan</gco:CharacterString> <!-- should be checked  -->
 							</gmd:country>
 							<gmd:electronicMailAddress>
-								<gco:CharacterString>CONTACT-EMAIL (e.g ops@eumetsat.int)</gco:CharacterString>
+								<gco:CharacterString>jma-msc-contact@ml.kishou.go.jp</gco:CharacterString> <!-- should be checked  -->
 							</gmd:electronicMailAddress>
 						</gmd:CI_Address>
 					</gmd:address>
 					<gmd:onlineResource>
 						<gmd:CI_OnlineResource>
 							<gmd:linkage>
-								<gmd:URL>ORGANISATION-WEBSITE (e.g http://www.eumetsat.int)</gmd:URL>
+								<gmd:URL>http://www.jma-net.go.jp/msc/en/index.html</gmd:URL> <!-- should be checked  -->
 							</gmd:linkage>
 						</gmd:CI_OnlineResource>
 					</gmd:onlineResource>
@@ -74,15 +73,12 @@
 						<gco:CharacterString/>
 					</gmd:title>
 					<gmd:alternateTitle>
-						<gco:CharacterString>PRODUCT-TITLE (e.g High Rate SEVIRI Level 1.5 Image Data - MSG - 0
-                            degree)</gco:CharacterString>
+						<gco:CharacterString>Himawawri-8 Himawari Standard Data</gco:CharacterString> <!-- should be checked  -->
 					</gmd:alternateTitle>
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>PUBLICATION-DATE (e.g 2014-01-20 : publication of the metadata record)</gco:Date>
-
-when the collection was published, when it was first created, when it was last modified =>> no need to provide all three, e.g. just provide the creation-date
+								<gco:Date>2015-03-20</gco:Date> <!-- should be checked  -->
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
@@ -92,7 +88,7 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>CREATION-DATE (e.g 2014-01-15 : creation date of the metadata record)</gco:Date>
+								<gco:Date>2015-03-20</gco:Date> <!-- should be checked  -->
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
@@ -102,7 +98,7 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>LAST-MODIFICATION-DATE (e.g 2014-01-22)</gco:Date>
+								<gco:Date>2015-03-20</gco:Date> <!-- should be checked  -->
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="modification"/>
@@ -115,7 +111,7 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:identifier>
 						<gmd:MD_Identifier>
 							<gmd:code>
-								<gco:CharacterString>ORGANISATION-PRODUCT-IDENTIFIER (EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+								<gco:CharacterString>EO:JMA:DAT:Himawari-8:HSD)</gco:CharacterString> <!-- should be checked  -->
 							</gmd:code>
 						</gmd:MD_Identifier>
 					</gmd:identifier>
@@ -126,10 +122,10 @@ when the collection was published, when it was first created, when it was last m
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>URL-TO-CALIBRATION-INFO (e.g http://www.eumetsat.int/website/home/Data/Products/Calibration/MSGCalibration/index.html)</gmd:URL>
+												<gmd:URL>http://www.data.jma.go.jp/mscweb/en/operation/calibration_portal.html</gmd:URL> <!-- should be checked  -->
 											</gmd:linkage>
 											<gmd:name>
-												<gco:CharacterString>URL Links to the Calibration information (calibration tables and product information) (e.g Seviri Insturment Calibration  Information)</gco:CharacterString>
+												<gco:CharacterString>Himawari Calibration Portal</gco:CharacterString> <!-- should be checked  -->
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="calibrationInformation"/>
@@ -148,10 +144,10 @@ when the collection was published, when it was first created, when it was last m
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>URL-TO-PRODUCT-INFO (e.g http://www.eumetsat.int/website/home/Data/Products/Level1Data/index.html)</gmd:URL>
+												<gmd:URL>http://www.data.jma.go.jp/mscweb/en/himawari89/space_segment/spsg_sample.html</gmd:URL> <!-- should be checked  -->
 											</gmd:linkage>
 											<gmd:name>
-												<gco:CharacterString>Information regarding the products (e.g Meteosat Second Generation product documentation)</gco:CharacterString>
+												<gco:CharacterString>Sample Data (Names/formats)</gco:CharacterString> <!-- should be checked  -->
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="productInformation"/>
@@ -171,7 +167,7 @@ when the collection was published, when it was first created, when it was last m
                 Any spacecraft specific effects have been removed, and in particular, linearisation and equalisation of the image radiometry has been performed for all SEVIRI channels.
                 The on-board blackbody data has been processed. Both radiometric and geometric quality control information is included.
                 The product is available in HRIT on EUMETCAST the EUMETSAT NRT dissemination system and in a variety of format (native, netcdf, JPG, PNG, Tiff, etc, see distribution part for more information).
-                There are 96 products generated over a complete day (every 15 mins).)</gco:CharacterString>
+                There are 96 products generated over a complete day (every 15 mins).)</gco:CharacterString> <!-- should be revised  -->
 			</gmd:abstract>
 			<gmd:status>
 				<gmd:MD_ProgressCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_ProgressCode" codeListValue="OnGoing"/>
@@ -179,50 +175,49 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:pointOfContact>
 				<gmd:CI_ResponsibleParty>
 					<gmd:individualName>
-						<gco:CharacterString>ORGANISATION-FULL-NAME (e.g European Organisation for the Exploitation of Meteorological
-							Satellites)</gco:CharacterString>
+						<gco:CharacterString>Japan Meteorological Agency</gco:CharacterString> <!-- should be checked  -->
 					</gmd:individualName>
 					<gmd:organisationName>
-						<gco:CharacterString>ORGANISATION (e.g EUMETSAT)</gco:CharacterString>
+						<gco:CharacterString>JMA</gco:CharacterString> <!-- should be checked  -->
 					</gmd:organisationName>
 					<gmd:contactInfo>
 						<gmd:CI_Contact>
 							<gmd:phone>
 								<gmd:CI_Telephone>
 									<gmd:voice>
-										<gco:CharacterString>TELEPHONE (e.g +49(0)6151-807 3660/3770)</gco:CharacterString>
+										<gco:CharacterString>N/A</gco:CharacterString> <!-- should be checked  -->
 									</gmd:voice>
 									<gmd:facsimile>
-										<gco:CharacterString>FAX (e.g +49(0)6151-807 3790)</gco:CharacterString>
+										<gco:CharacterString>N/A</gco:CharacterString> <!-- should be checked  -->
 									</gmd:facsimile>
 								</gmd:CI_Telephone>
 							</gmd:phone>
 							<gmd:address>
 								<gmd:CI_Address>
 									<gmd:deliveryPoint>
-										<gco:CharacterString>ADDRESS-STREET (e.g EUMETSAT Allee 1)</gco:CharacterString>
+										<gco:CharacterString>3-235 Nakakiyoto</gco:CharacterString> <!-- should be checked  -->
 									</gmd:deliveryPoint>
 									<gmd:city>
-										<gco:CharacterString>ADDRESS-CITY (e.g Darmstadt)</gco:CharacterString>
+										<gco:CharacterString>Kiyose-city</gco:CharacterString> <!-- should be checked  -->
 									</gmd:city>
 									<gmd:administrativeArea>
-										<gco:CharacterString>REGION (e.g Hessen)</gco:CharacterString>
+										<gco:CharacterString>Tokyo</gco:CharacterString> <!-- should be checked  -->
 									</gmd:administrativeArea>
 									<gmd:postalCode>
-										<gco:CharacterString>POSTCODE (e.g 64295)</gco:CharacterString>
+										<gco:CharacterString>2040012</gco:CharacterString> <!-- should be checked  -->
 									</gmd:postalCode>
 									<gmd:country>
-										<gco:CharacterString>COUNTRY (e.g Germany)</gco:CharacterString>
+										<gco:CharacterString>Japan</gco:CharacterString> <!-- should be checked  -->
 									</gmd:country>
 									<gmd:electronicMailAddress>
-										<gco:CharacterString>EMAIL (e.g ops@eumetsat.int)</gco:CharacterString>
+										<gco:CharacterString>jma-msc-contact@ml.kishou.go.jp</gco:CharacterString> <!-- should be checked  -->
 									</gmd:electronicMailAddress>
 								</gmd:CI_Address>
 							</gmd:address>
 							<gmd:onlineResource>
 								<gmd:CI_OnlineResource>
 									<gmd:linkage>
-										<gmd:URL>ORGANISATION-URL (e.g http://www.eumetsat.int)</gmd:URL>
+										<gmd:URL>http://www.jma-net.go.jp/msc/en/index.html</gmd:URL> <!-- should be checked  -->
 									</gmd:linkage>
 								</gmd:CI_OnlineResource>
 							</gmd:onlineResource>
@@ -236,14 +231,14 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:graphicOverview>
 				<gmd:MD_BrowseGraphic>
 					<gmd:fileName>
-						<gco:CharacterString>PRODUCT-IMAGERY (e.g http://navigator.eumetsat.int:80/smartEditor/preview/msg-level-1-5.jpg)</gco:CharacterString>
+						<gco:CharacterString>http://www.data.jma.go.jp/mscweb/data/himawari/index.html</gco:CharacterString> <!-- should be checked  -->
 					</gmd:fileName>
 				</gmd:MD_BrowseGraphic>
 			</gmd:graphicOverview>
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>Atmosphere</gco:CharacterString>
+						<gco:CharacterString>Atmosphere</gco:CharacterString> <!-- ? -->
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="product">product</gmd:MD_KeywordTypeCode>
@@ -251,15 +246,15 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:thesaurusName>
 						<gmd:CI_Citation>
 							<gmd:title>
-								<gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString>
+								<gco:CharacterString>GEMET - INSPIRE themes, version 1.0</gco:CharacterString> <!-- ? -->
 							</gmd:title>
 							<gmd:date>
 								<gmd:CI_Date>
 									<gmd:date>
-										<gco:Date>2008-06-01</gco:Date>
+										<gco:Date>2008-06-01</gco:Date> <!-- ? -->
 									</gmd:date>
 									<gmd:dateType>
-										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode> <!-- ? -->
 									</gmd:dateType>
 								</gmd:CI_Date>
 							</gmd:date>
@@ -270,7 +265,7 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>Atmospheric Temperature</gco:CharacterString>
+						<gco:CharacterString>Atmospheric Temperature</gco:CharacterString> <!-- ? -->
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode" codeListValue="theme"/>
@@ -283,10 +278,10 @@ when the collection was published, when it was first created, when it was last m
 							<gmd:date>
 								<gmd:CI_Date>
 									<gmd:date>
-										<gco:Date>2010-01-01</gco:Date>
+										<gco:Date>2010-01-01</gco:Date> <!-- ? -->
 									</gmd:date>
 									<gmd:dateType>
-										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+										<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode> <!-- ? -->
 									</gmd:dateType>
 								</gmd:CI_Date>
 							</gmd:date>
@@ -297,7 +292,7 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>satelliteObservation</gco:CharacterString>
+						<gco:CharacterString>satelliteObservation</gco:CharacterString> <!-- ? -->
 					</gmd:keyword>
 					<gmd:type>
 						<MD_KeywordTypeCode xmlns="http://www.isotc211.org/2005/gmd" codeListValue="theme" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">theme</MD_KeywordTypeCode>
@@ -305,12 +300,12 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:thesaurusName>
 						<gmd:CI_Citation>
 							<gmd:title>
-								<gco:CharacterString>WMO_CategoryCode</gco:CharacterString>
+								<gco:CharacterString>WMO_CategoryCode</gco:CharacterString> <!-- ? -->
 							</gmd:title>
 							<gmd:date>
 								<gmd:CI_Date>
 									<gmd:date>
-										<gco:Date>2008-06-01</gco:Date>
+										<gco:Date>2008-06-01</gco:Date> <!-- ? -->
 									</gmd:date>
 									<gmd:dateType>
 										<gmd:CI_DateTypeCode codeListValue="publication" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode"/>
@@ -324,7 +319,7 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>OriginatingCentre</gco:CharacterString>
+						<gco:CharacterString>OriginatingCentre</gco:CharacterString> <!-- ? -->
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeListValue="dataCentre" codeList="http://wis.wmo.int/2012/codelists/WMOCodeLists.xml#MD_DistributionScopeCode">dataCentre</gmd:MD_KeywordTypeCode>
@@ -376,7 +371,7 @@ when the collection was published, when it was first created, when it was last m
 				<gmd:MD_Keywords>
 					<gmd:keyword>
 						<!-- ADD INSTRUMENT OSCAR PAGE (e.g Instrument SEVIRI (EUMETSAT) (http://www.wmo-sat.info/oscar/instruments/view/503) of InstrumenType Moderate-resolution optical imager (http://www.wmo-sat.info/oscar/instrumenttypes/view/1) ) -->
-						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/503" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/1">INSTRUMENT NAME (e.g SEVIRI (EUMETSAT))</gmx:Anchor>
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/503" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/1">AHI</gmx:Anchor> <!-- should be checked  -->
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeListValue="instrument" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">instrument</gmd:MD_KeywordTypeCode>
@@ -428,7 +423,7 @@ when the collection was published, when it was first created, when it was last m
 				<gmd:MD_Keywords>
 					<gmd:keyword>
 						<!-- PLATFORM-OSCAR-PAGE (e.g Platform/Programm (Satellite) METEOSAT Second Generation (http://www.wmo-sat.info/oscar/satellites/view/193)) -->
-						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/satelliteprogrammes/view/102" xlink:actuate="onRequest">Meteosat Second Generation</gmx:Anchor>
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/satelliteprogrammes/view/102" xlink:actuate="onRequest">Himawari 3rd generation</gmx:Anchor> <!-- should be checked  -->
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeListValue="platform" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">platform</gmd:MD_KeywordTypeCode>
@@ -476,6 +471,58 @@ when the collection was published, when it was first created, when it was last m
 					</gmd:thesaurusName>
 				</gmd:MD_Keywords>
 			</gmd:descriptiveKeywords>
+			<gmd:descriptiveKeywords>
+				<gmd:MD_Keywords>
+					<gmd:keyword>
+						<!-- Instrument IMAGER (INSAT) (http://www.wmo-sat.info/oscar/instruments/view/218) of InstrumenType Moderate-resolution optical imager (http://www.wmo-sat.info/oscar/instrumenttypes/view/1) -->
+						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/218" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/1">IMAGER (INSAT)</gmx:Anchor>
+					</gmd:keyword>
+					<gmd:type>
+						<gmd:MD_KeywordTypeCode codeListValue="platform" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">platform</gmd:MD_KeywordTypeCode>
+					</gmd:type>
+					<gmd:thesaurusName>
+							<gmd:CI_Citation>
+								<gmd:title>
+									<gco:CharacterString>OSCAR (Observing Systems Capability Analysis and Review Tool) List of all Satellites (http://www.wmo-sat.info/oscar/satellites)</gco:CharacterString>
+								</gmd:title>
+								<gmd:date>
+									<gmd:CI_Date>
+										<gmd:date>
+											<gco:Date>2016-02-10</gco:Date>
+										</gmd:date>
+										<gmd:dateType>
+											<gmd:CI_DateTypeCode codeListValue="revision" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode">revision</gmd:CI_DateTypeCode>
+										</gmd:dateType>
+									</gmd:CI_Date>
+								</gmd:date>
+								<gmd:citedResponsibleParty>
+									<gmd:CI_ResponsibleParty>
+										<gmd:organisationName>
+											<gco:CharacterString>WMO Secretariat</gco:CharacterString>
+										</gmd:organisationName>
+										<gmd:contactInfo>
+											<gmd:CI_Contact>
+												<gmd:onlineResource>
+													<gmd:CI_OnlineResource>
+														<gmd:linkage>
+															<gmd:URL>http://www.wmo.int/pages/about/sec/sg_en.html</gmd:URL>
+														</gmd:linkage>
+														<gmd:protocol>
+															<gco:CharacterString>WWW:LINK-1.0-http-link</gco:CharacterString>
+														</gmd:protocol>
+													</gmd:CI_OnlineResource>
+												</gmd:onlineResource>
+											</gmd:CI_Contact>
+										</gmd:contactInfo>
+										<gmd:role>
+											<gmd:CI_RoleCode codeListValue="publisher" codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode">publisher</gmd:CI_RoleCode>
+										</gmd:role>
+									</gmd:CI_ResponsibleParty>
+								</gmd:citedResponsibleParty>
+							</gmd:CI_Citation>
+						</gmd:thesaurusName>
+				</gmd:MD_Keywords>
+			</gmd:descriptiveKeywords>
             <!-- Data Policy Part. Dataset is qualified as WMO Essential. Check the WMO WIS Guide when other Data Policies need to be applied (WMO Additional, Data not delivered on the GTS with another data policy) -->
 			<gmd:resourceConstraints>
 				<gmd:MD_LegalConstraints>
@@ -489,7 +536,7 @@ when the collection was published, when it was first created, when it was last m
 						<gco:CharacterString>WMOEssential</gco:CharacterString>
 					</gmd:otherConstraints>
 					<gmd:otherConstraints>
-						<gco:CharacterString>GTSPriority3</gco:CharacterString>
+						<gco:CharacterString>GTSPriority3</gco:CharacterString> <!-- ? -->
 					</gmd:otherConstraints>
 				</gmd:MD_LegalConstraints>
 			</gmd:resourceConstraints>
@@ -514,16 +561,16 @@ when the collection was published, when it was first created, when it was last m
 								<gco:Boolean>true</gco:Boolean>
 							</gmd:extentTypeCode>
 							<gmd:westBoundLongitude>
-								<gco:Decimal>-79.0</gco:Decimal>
+								<gco:Decimal>60.0</gco:Decimal> <!-- equal to DIAS meta data  -->
 							</gmd:westBoundLongitude>
 							<gmd:eastBoundLongitude>
-								<gco:Decimal>79.0</gco:Decimal>
+								<gco:Decimal>220.0</gco:Decimal> <!-- equal to DIAS meta data  -->
 							</gmd:eastBoundLongitude>
 							<gmd:southBoundLatitude>
-								<gco:Decimal>-81.0</gco:Decimal>
+								<gco:Decimal>-80.0</gco:Decimal> <!-- equal to DIAS meta data  -->
 							</gmd:southBoundLatitude>
 							<gmd:northBoundLatitude>
-								<gco:Decimal>81.0</gco:Decimal>
+								<gco:Decimal>80.0</gco:Decimal> <!-- equal to DIAS meta data  -->
 							</gmd:northBoundLatitude>
 						</gmd:EX_GeographicBoundingBox>
 					</gmd:geographicElement>
@@ -537,7 +584,7 @@ when the collection was published, when it was first created, when it was last m
 							<gmd:geographicIdentifier>
 								<gmd:MD_Identifier>
 									<gmd:code>
-										<gco:CharacterString>Full Disk 0 degrees</gco:CharacterString>
+										<gco:CharacterString>Full Disk 0 degrees</gco:CharacterString> <!-- ? -->
 									</gmd:code>
 								</gmd:MD_Identifier>
 							</gmd:geographicIdentifier>
@@ -576,7 +623,7 @@ when the collection was published, when it was first created, when it was last m
 							<gmd:citedResponsibleParty>
 								<gmd:CI_ResponsibleParty>
 									<gmd:organisationName>
-										<gco:CharacterString>ADD ORGANISATION (e.g: EUMETSAT)</gco:CharacterString>
+										<gco:CharacterString>JMA</gco:CharacterString> <!-- should be checked  -->
 									</gmd:organisationName>
 									<gmd:role/>
 								</gmd:CI_ResponsibleParty>
@@ -584,7 +631,7 @@ when the collection was published, when it was first created, when it was last m
 						</gmd:CI_Citation>
 					</gmd:authority>
 					<gmd:code>
-						<gco:CharacterString>ADD PRODUCT LEVEL (e.g: L1.5 or L2, ...)</gco:CharacterString>
+						<gco:CharacterString>N/A</gco:CharacterString> <!-- should be checked  -->
 					</gmd:code>
 				</gmd:MD_Identifier>
 			</gmd:processingLevelCode>
@@ -596,10 +643,10 @@ when the collection was published, when it was first created, when it was last m
 			<gmd:distributionFormat>
 				<gmd:MD_Format>
 					<gmd:name>
-						<gco:CharacterString>ADD FORMAT TYPE (eg: GEO HDF)</gco:CharacterString>
+						<gco:CharacterString>HSD</gco:CharacterString> <!-- should be checked  -->
 					</gmd:name>
 					<gmd:version>
-						<gco:CharacterString>ADD FORMAT VERSION (eg: 5)</gco:CharacterString>
+						<gco:CharacterString>1.2</gco:CharacterString> <!-- should be checked  -->
 					</gmd:version>
 					<gmd:formatDistributor>
 						<gmd:MD_Distributor>
@@ -611,19 +658,19 @@ when the collection was published, when it was first created, when it was last m
 										<gco:CharacterString>MB</gco:CharacterString>
 									</gmd:unitsOfDistribution>
 									<gmd:transferSize>
-										<gco:Real>443.0</gco:Real>
+										<gco:Real>965</gco:Real> <!-- Total of 160 files at one full disk scan -->
 									</gmd:transferSize>
 									<gmd:onLine>
                                         <!-- ADD THE ONLINE RESOURCE LINK -->
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>http://eoportal.eumetsat.int/userMgmt/protected/dataCentre.faces?acronym=MSG15%26id=EO:EUM:DAT:MSG:HRSEVIRI</gmd:URL>
+												<gmd:URL>http://www.data.jma.go.jp/mscweb/en/himawari89/cloud_service/cloud_service.html</gmd:URL> <!-- should be checked  -->
 											</gmd:linkage>
 											<gmd:protocol>
 												<gco:CharacterString>WWW:LINK-1.0-http--link</gco:CharacterString>
 											</gmd:protocol>
 											<gmd:name>
-												<gco:CharacterString>ADD SERVICE NAME (eg:EUMETSAT Data Centre)</gco:CharacterString>
+												<gco:CharacterString>HimawariCloud</gco:CharacterString> <!-- should be checked  -->
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="CI_OnLineFunctionCode" codeListValue="near realtime access"/>
@@ -683,49 +730,49 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:distributorContact>
 						<gmd:CI_ResponsibleParty id="id_EUM">
 							<gmd:individualName>
-								<gco:CharacterString>ADD DISTRIBUTOR NAME (eg: EUMETSAT)</gco:CharacterString>
+								<gco:CharacterString>Japan Meteorological Agency</gco:CharacterString> <!-- should be checked  -->
 							</gmd:individualName>
 							<gmd:organisationName>
-								<gco:CharacterString>ADD DISTRIBUTOR ACRONYM (eg:EUM)</gco:CharacterString>
+								<gco:CharacterString>JMA</gco:CharacterString> <!-- should be checked  -->
 							</gmd:organisationName>
 							<gmd:contactInfo>
 								<gmd:CI_Contact>
 									<gmd:phone>
 										<gmd:CI_Telephone>
 											<gmd:voice>
-												<gco:CharacterString>+49(0)6151-807 3660/3770</gco:CharacterString>
+												<gco:CharacterString>N/A</gco:CharacterString> <!-- should be checked  -->
 											</gmd:voice>
 											<gmd:facsimile>
-												<gco:CharacterString>+49(0)6151-807 3790</gco:CharacterString>
+												<gco:CharacterString>N/A</gco:CharacterString> <!-- should be checked  -->
 											</gmd:facsimile>
 										</gmd:CI_Telephone>
 									</gmd:phone>
 									<gmd:address>
 										<gmd:CI_Address>
 											<gmd:deliveryPoint>
-												<gco:CharacterString>EUMETSAT Allee 1</gco:CharacterString>
+												<gco:CharacterString>3-235 Nakakiyoto</gco:CharacterString> <!-- should be checked  -->
 											</gmd:deliveryPoint>
 											<gmd:city>
-												<gco:CharacterString>Darmstadt</gco:CharacterString>
+												<gco:CharacterString>Kiyose-city</gco:CharacterString> <!-- should be checked  -->
 											</gmd:city>
 											<gmd:administrativeArea>
-												<gco:CharacterString>Hessen</gco:CharacterString>
+												<gco:CharacterString>Tokyo</gco:CharacterString> <!-- should be checked  -->
 											</gmd:administrativeArea>
 											<gmd:postalCode>
-												<gco:CharacterString>64295</gco:CharacterString>
+												<gco:CharacterString>2040012</gco:CharacterString> <!-- should be checked  -->
 											</gmd:postalCode>
 											<gmd:country>
-												<gco:CharacterString>Germany</gco:CharacterString>
+												<gco:CharacterString>Japan</gco:CharacterString> <!-- should be checked  -->
 											</gmd:country>
 											<gmd:electronicMailAddress>
-												<gco:CharacterString>ops@eumetsat.int</gco:CharacterString>
+												<gco:CharacterString>jma-msc-contact@ml.kishou.go.jp</gco:CharacterString> <!-- should be checked  -->
 											</gmd:electronicMailAddress>
 										</gmd:CI_Address>
 									</gmd:address>
 									<gmd:onlineResource>
 										<gmd:CI_OnlineResource>
 											<gmd:linkage>
-												<gmd:URL>http://www.eumetsat.int</gmd:URL>
+												<gmd:URL>http://www.jma-net.go.jp/msc/en/index.html</gmd:URL> <!-- should be checked  -->
 											</gmd:linkage>
 										</gmd:CI_OnlineResource>
 									</gmd:onlineResource>
