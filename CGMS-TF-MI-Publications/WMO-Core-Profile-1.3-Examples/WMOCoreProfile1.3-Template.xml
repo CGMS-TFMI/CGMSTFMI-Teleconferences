@@ -4,7 +4,7 @@
 	<!-- Author: WMO CGMS TFMI -->
 	<!-- RevisionDate: 16-02-2016 - aligned with simplified CGMS model as agreed upon in last telcos -->
 	<gmd:fileIdentifier>
-		<gco:CharacterString>PRODUCT-UID (urn:x-wmo:md:OrganisationInternetDomainName, e.g urn:x-wmo:md:int.eumetsat.int:EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+		<gco:CharacterString>WMCP-IDENTIFIER (urn:x-wmo:md:OrganisationInternetDomainName, e.g urn:x-wmo:md:int.eumetsat.int:EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
 	</gmd:fileIdentifier>
 	<gmd:language>
 		<gmd:LanguageCode codeList="http://www.w3.org/WAI/ER/IG/ert/iso639.htm" codeListValue="eng"/>
@@ -77,32 +77,20 @@
 						<gco:CharacterString>PRODUCT-TITLE (e.g High Rate SEVIRI Level 1.5 Image Data - MSG - 0
                             degree)</gco:CharacterString>
 					</gmd:alternateTitle>
+                    <gmd:date>
+                        <gmd:CI_Date>
+                            <gmd:date>
+                                <gco:Date>WMCP-CREATION-DATE (e.g 2009-03-23)</gco:Date>
+                            </gmd:date>
+                            <gmd:dateType>
+                                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
+                            </gmd:dateType>
+                        </gmd:CI_Date>
+                    </gmd:date>
 					<gmd:date>
 						<gmd:CI_Date>
 							<gmd:date>
-								<gco:Date>PUBLICATION-DATE (e.g 2014-01-20 : publication of the metadata record)</gco:Date>
-
-when the collection was published, when it was first created, when it was last modified =>> no need to provide all three, e.g. just provide the creation-date
-							</gmd:date>
-							<gmd:dateType>
-								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
-							</gmd:dateType>
-						</gmd:CI_Date>
-					</gmd:date>
-					<gmd:date>
-						<gmd:CI_Date>
-							<gmd:date>
-								<gco:Date>CREATION-DATE (e.g 2014-01-15 : creation date of the metadata record)</gco:Date>
-							</gmd:date>
-							<gmd:dateType>
-								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
-							</gmd:dateType>
-						</gmd:CI_Date>
-					</gmd:date>
-					<gmd:date>
-						<gmd:CI_Date>
-							<gmd:date>
-								<gco:Date>LAST-MODIFICATION-DATE (e.g 2014-01-22)</gco:Date>
+								<gco:Date>WMCP-LAST-MODIFICATION-DATE (e.g 2014-01-22)</gco:Date>
 							</gmd:date>
 							<gmd:dateType>
 								<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="modification"/>
@@ -115,7 +103,7 @@ when the collection was published, when it was first created, when it was last m
 					<gmd:identifier>
 						<gmd:MD_Identifier>
 							<gmd:code>
-								<gco:CharacterString>ORGANISATION-PRODUCT-IDENTIFIER (EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+								<gco:CharacterString> INTERNAL ORGANISATION-PRODUCT-IDENTIFIER (EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
 							</gmd:code>
 						</gmd:MD_Identifier>
 					</gmd:identifier>
