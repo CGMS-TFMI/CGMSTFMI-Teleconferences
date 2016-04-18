@@ -103,7 +103,7 @@
 					<gmd:identifier>
 						<gmd:MD_Identifier>
 							<gmd:code>
-								<gco:CharacterString> INTERNAL ORGANISATION-PRODUCT-IDENTIFIER (EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
+								<gco:CharacterString> INTERNAL-ORGANISATION-PRODUCT-IDENTIFIER (EO:EUM:DAT:MSG:HRSEVIRI)</gco:CharacterString>
 							</gmd:code>
 						</gmd:MD_Identifier>
 					</gmd:identifier>
@@ -171,7 +171,7 @@
 							Satellites)</gco:CharacterString>
 					</gmd:individualName>
 					<gmd:organisationName>
-						<gco:CharacterString>ORGANISATION (e.g EUMETSAT)</gco:CharacterString>
+						<gco:CharacterString>ORGANISATION-NAME (e.g EUMETSAT)</gco:CharacterString>
 					</gmd:organisationName>
 					<gmd:contactInfo>
 						<gmd:CI_Contact>
@@ -224,7 +224,7 @@
 			<gmd:graphicOverview>
 				<gmd:MD_BrowseGraphic>
 					<gmd:fileName>
-						<gco:CharacterString>PRODUCT-IMAGERY (e.g http://navigator.eumetsat.int:80/smartEditor/preview/msg-level-1-5.jpg)</gco:CharacterString>
+						<gco:CharacterString>PRODUCT-IMAGERY-URL (e.g http://navigator.eumetsat.int:80/smartEditor/preview/msg-level-1-5.jpg)</gco:CharacterString>
 					</gmd:fileName>
 				</gmd:MD_BrowseGraphic>
 			</gmd:graphicOverview>
@@ -285,7 +285,7 @@
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>satelliteObservation</gco:CharacterString>
+						<gco:CharacterString>WCMP-WMO-CATEGORY-CODE (e.g satelliteObservation)</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
 						<MD_KeywordTypeCode xmlns="http://www.isotc211.org/2005/gmd" codeListValue="theme" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode">theme</MD_KeywordTypeCode>
@@ -363,7 +363,7 @@
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<!-- ADD INSTRUMENT OSCAR PAGE (e.g Instrument SEVIRI (EUMETSAT) (http://www.wmo-sat.info/oscar/instruments/view/503) of InstrumenType Moderate-resolution optical imager (http://www.wmo-sat.info/oscar/instrumenttypes/view/1) ) -->
+						<!-- OSCAR-INSTRUMENT: ADD INSTRUMENT OSCAR PAGE (e.g Instrument SEVIRI (EUMETSAT) (http://www.wmo-sat.info/oscar/instruments/view/503) of InstrumenType Moderate-resolution optical imager (http://www.wmo-sat.info/oscar/instrumenttypes/view/1) ) -->
 						<gmx:Anchor xlink:href="http://www.wmo-sat.info/oscar/instruments/view/503" xlink:actuate="onRequest" xlink:role="http://www.wmo-sat.info/oscar/instrumenttypes/view/1">INSTRUMENT NAME (e.g SEVIRI (EUMETSAT))</gmx:Anchor>
 					</gmd:keyword>
 					<gmd:type>
@@ -495,7 +495,7 @@
 			</gmd:topicCategory>
 			<gmd:extent>
 				<gmd:EX_Extent>
-                    <!-- GEOSPATIAL EXTENT. To be added as a bounding box -->
+                    <!-- GEOSPATIAL-EXTENT. To be added as a bounding box -->
 					<gmd:geographicElement>
 						<gmd:EX_GeographicBoundingBox>
 							<gmd:extentTypeCode>
@@ -518,7 +518,7 @@
 				</gmd:EX_Extent>
 			</gmd:extent>
 			<gmd:extent>
-                <!-- ADD Geographic Identifier -->
+                <!-- ADD GEOGRAPHIC-IDENTIFIER -->
 				<gmd:EX_Extent>
 					<gmd:geographicElement>
 						<gmd:EX_GeographicDescription>
@@ -572,7 +572,7 @@
 						</gmd:CI_Citation>
 					</gmd:authority>
 					<gmd:code>
-						<gco:CharacterString>ADD PRODUCT LEVEL (e.g: L1.5 or L2, ...)</gco:CharacterString>
+						<gco:CharacterString>PRODUCT-LEVEL (e.g: L1.5 or L2, ...)</gco:CharacterString>
 					</gmd:code>
 				</gmd:MD_Identifier>
 			</gmd:processingLevelCode>

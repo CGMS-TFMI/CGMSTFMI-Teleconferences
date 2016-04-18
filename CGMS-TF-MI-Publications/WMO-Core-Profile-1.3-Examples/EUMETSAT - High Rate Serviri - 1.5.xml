@@ -165,7 +165,7 @@
 												<gmd:URL>http://www.eumetsat.int/website/home/Data/Products/Calibration/MSGCalibration/index.html</gmd:URL>
 											</gmd:linkage>
 											<gmd:name>
-												<gco:CharacterString>Seviri Insturment Calibration  information</gco:CharacterString>
+												<gco:CharacterString>Seviri Instrument Calibration  information</gco:CharacterString>
 											</gmd:name>
 											<gmd:function>
 												<gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="calibrationInformation"/>
