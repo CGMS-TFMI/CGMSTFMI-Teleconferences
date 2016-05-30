@@ -717,10 +717,10 @@
 					<gmd:distributorContact>
 						<gmd:CI_ResponsibleParty id="id_EUM">
 							<gmd:individualName>
-								<gco:CharacterString>India Meteorological department</gco:CharacterString>
+								<gco:CharacterString>European Organisation for the Exploitation of Meteorological Satellites</gco:CharacterString>
 							</gmd:individualName>
 							<gmd:organisationName>
-								<gco:CharacterString>IMD</gco:CharacterString>
+								<gco:CharacterString>EUMETSAT</gco:CharacterString>
 							</gmd:organisationName>
 							<gmd:contactInfo>
 								<gmd:CI_Contact>
