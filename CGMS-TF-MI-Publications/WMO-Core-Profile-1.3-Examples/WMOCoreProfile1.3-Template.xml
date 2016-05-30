@@ -312,7 +312,7 @@
 			<gmd:descriptiveKeywords>
 				<gmd:MD_Keywords>
 					<gmd:keyword>
-						<gco:CharacterString>ADD-OriginatingCentre</gco:CharacterString>
+						<gco:CharacterString>OriginatingCentre</gco:CharacterString>
 					</gmd:keyword>
 					<gmd:type>
 						<gmd:MD_KeywordTypeCode codeListValue="dataCentre" codeList="http://wis.wmo.int/2012/codelists/WMOCodeLists.xml#MD_DistributionScopeCode">dataCentre</gmd:MD_KeywordTypeCode>
