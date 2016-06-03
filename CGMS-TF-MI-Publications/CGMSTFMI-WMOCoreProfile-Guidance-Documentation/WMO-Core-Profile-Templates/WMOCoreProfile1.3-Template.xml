@@ -14,7 +14,7 @@
     </gmd:hierarchyLevel>
     <!-- contact for the metadata -->
     <gmd:contact>
-        <!-- Party responsible for the product (e.g NOAA, EUMETSAT, JMA, ....) -->
+        <!-- Metadata Responsible Party (e.g NOAA, EUMETSAT, JMA, ....) -->
         <gmd:CI_ResponsibleParty>
             <gmd:organisationName>
                 <gco:CharacterString>ADD-ORGANISATION-NAME (e.g EUMETSAT)</gco:CharacterString>
@@ -58,7 +58,7 @@
         </gmd:CI_ResponsibleParty>
     </gmd:contact>
     <gmd:dateStamp>
-        <gco:Date>ADD-DATESTAMP1</gco:Date>
+        <gco:Date>ADD-DATESTAMP</gco:Date>
     </gmd:dateStamp>
     <gmd:metadataStandardName>
         <gco:CharacterString>WMO Core Metadata Profile of ISO19115 (WMO Core), 2003/Cor.1:2006 (ISO 19115), 2007 (ISO/TS 19139)</gco:CharacterString>
@@ -84,16 +84,6 @@
                             </gmd:date>
                             <gmd:dateType>
                                 <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation"/>
-                            </gmd:dateType>
-                        </gmd:CI_Date>
-                    </gmd:date>
-                    <gmd:date>
-                        <gmd:CI_Date>
-                            <gmd:date>
-                                <gco:Date>ADD-LAST-MODIFICATION-DATE (e.g 2014-01-22)</gco:Date>
-                            </gmd:date>
-                            <gmd:dateType>
-                                <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="modification"/>
                             </gmd:dateType>
                         </gmd:CI_Date>
                     </gmd:date>
